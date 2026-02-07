@@ -120,14 +120,14 @@ Tabel ini menampilkan berbagai desktop environment yang diuji dalam pengembangan
 
 Tabel berikut menyajikan berbagai browser web beserta sumber paket dan status instalasinya, yang digunakan untuk mengevaluasi kompatibilitas, stabilitas, dan kesiapan aplikasi pada sistem operasi yang dikembangkan.
 
-| Browser  | Source                                                        | Status                       |
-| -------  | --------------------------------------------------------------| ---------------------------- |
-| Firefox  | [link](https://archlinux.org/packages/extra/x86_64/firefox/)   | berhasil                     |
-| Midori   | [link](https://aur.archlinux.org/midori.git)                  | gagal saat melakukan makepkg |
-| Dillo    | [link](https://aur.archlinux.org/palemoon.git)                | berhasil                     | 
-| Luakit   | [link](https://archlinux.org/packages/extra/x86_64/luakit/)   | berhasil                     |
-| Netsurf  | [link](https://archlinux.org/packages/extra/x86_64/netsurf/)  | berhasil                     |
-| Epiphany | [link](https://archlinux.org/packages/extra/x86_64/epiphany/) | berhasil                     |
+| Browser  | Source                                                        |
+| -------  | --------------------------------------------------------------|
+| Firefox  | [link](https://archlinux.org/packages/extra/x86_64/firefox/)   |
+| Midori   | [link](https://aur.archlinux.org/midori.git)                  |
+| Dillo    | [link](https://aur.archlinux.org/palemoon.git)                |
+| Luakit   | [link](https://archlinux.org/packages/extra/x86_64/luakit/)   |
+| Netsurf  | [link](https://archlinux.org/packages/extra/x86_64/netsurf/)  |
+| Epiphany | [link](https://archlinux.org/packages/extra/x86_64/epiphany/) |
 
 Tabel ini menunjukkan hasil pengujian instalasi beberapa browser pada sistem operasi yang dikembangkan. Mayoritas browser seperti Firefox, Dillo, Luakit, Netsurf, dan Epiphany berhasil diinstal dengan baik, menandakan kompatibilitas yang baik dengan sistem. Sementara itu, Midori gagal pada tahap makepkg, menunjukkan adanya kendala pada proses kompilasi atau dependensi. Hasil ini menjadi dasar untuk memilih browser yang stabil dan siap digunakan dalam sistem operasi.
 
