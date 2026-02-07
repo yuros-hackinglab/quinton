@@ -2,9 +2,11 @@
 
 Quinton merpukana riset yang bertujuan untuk pengembangan sistem operasi bagi lembaga GLAM (Gallery, Library, Archives, and Museums). Riset ini bertujuan untuk mencari kernel, desktop environment, dan browser yang cocok digunakan bagi perangkat dengan spesifikasi rendah dan waktu produksi yang telah lebih dari 10 tahun. Cakupan penelitian yang mengambil dengan batasan spesifikasi rendah yang telah lebih dari 10 tahun karena tingginya utilitas penggunaan perangkat yang menggunakan spesifikasi rendah dan umur produksi yang lebih dari 10 tahun di perpustakaan. Data tersebut didapatkan dari hasil riset yang bekerja sama dengan HMPS Ilmu Perpustakaan UIN Syarif Hidayatullah Jakarta dari beberapa sampel yang dikumpulkan dari berbagai instansi yang ada di Jakarta.  
 
-# 2. Spesification
+---
 
-Untuk riset ini kami menggunakan perangkat laptop dengan spesifikasi sebagai berikut
+# 2. Spesifikasi
+
+Untuk riset ini kami menggunakan perangkat dengan spesifikasi sebagai berikut
 
 | Jenis   | Spesifikasi                                                |
 | ------- | --------------------------------------------------------- |
@@ -20,6 +22,8 @@ Adapun aplikasi yang kami gunakan untuk membantu melakukan riset sebagai berikut
 | -------- | ----------------------- |
 | SLiMS    | 9.7.2 (Bulian D Roger)  |
 | Htop     | 3.4.1                   |
+
+---
 
 # 3. Metode
 
@@ -41,13 +45,15 @@ Dalam riset ini tim menjalankan dua fase riset. Pada riset fase pertama, tim mel
 4. Melakukan benchmarking dan pencatatan hasil benchmarking terhadap setiap kernel dan desktop environment
 5. Menerapkan sistem ranking untuk menetapkan candidate terbaik
 
+---
+
 # 4. Hasil
 
 Bab ini menyajikan hasil dari seluruh rangkaian pengujian dan riset yang telah dilakukan, mencakup evaluasi kernel, browser, serta aspek performa, stabilitas, dan pengalaman pengguna sebagai dasar analisis pengembangan sistem operasi.
 
 ## 4.1. Riset Dokumen dan Survey
 
-Tabel berikut menampilkan hasil riset spesifikasi perangkat komputer di berbagai sekolah, perpustakaan, dan institusi pendidikan yang digunakan sebagai dasar analisis kebutuhan serta kompatibilitas dalam pengembangan dan pengujian sistem operasi berbasis GLAM.
+Tabel berikut menampilkan hasil riset spesifikasi perangkat komputer di berbagai sekolah, perpustakaan, dan institusi pendidikan yang digunakan sebagai dasar analisis kebutuhan serta kompatibilitas dalam prototyping sistem operasi berbasis GLAM.
 
 | Sekolah                        | Sistem Operasi        | Manufacture           | Model                                   | Processor                                                         | Memory  | Graphic                    | VRAM  |
 | ------------------------------ | --------------------- | --------------------- | --------------------------------------- | ----------------------------------------------------------------- | ------- | -------------------------- | ----- |
@@ -72,44 +78,58 @@ Tabel berikut menampilkan hasil riset spesifikasi perangkat komputer di berbagai
 
 Berdasarkan tabel tersebut data spesifikasi komputer yang digunakan di berbagai sekolah, perpustakaan, dan institusi pendidikan, dengan mayoritas perangkat menggunakan sistem operasi Windows 11 (Home dan Pro) serta sebagian komputer masih menggunakan Windows 10. Produsen yang paling banyak digunakan adalah Lenovo, ASUS, dan HP, didominasi oleh perangkat All-in-One PC. Spesifikasi hardware sangat bervariasi, mulai dari prosesor kelas entry-level seperti Intel Celeron dan AMD Athlon hingga Intel Core i3 dan i5 dari berbagai generasi, dengan kapasitas RAM berkisar antara 4 GB hingga 16 GB. Seluruh perangkat menggunakan grafis terintegrasi (Intel UHD, AMD Radeon, atau Microsoft Basic Display) dengan VRAM relatif kecil.
 
-Tabel berikut menyajikan hasil pengujian berbagai kernel Linux sebagai bagian dari proses analisis stabilitas, kompatibilitas perangkat keras, dan kelayakan kernel dalam pengembangan sistem operasi berbasis GLAM.
+Tabel berikut menyajikan berbagai varian kernel Linux beserta sumber paketnya, yang digunakan sebagai dasar pengujian stabilitas, performa, dan kompatibilitas prosesor kelas entry-level dalam pengembangan sistem operasi berbasis GLAM.
 
-| Kernel   | Source                                                | Status                                  |
-| ------- | --------------------------------------------------------- | --------------------------------------------------------- |
-| Lqx               | [link](https://liquorix.net)                                                   | proses instalasi dan booting berhasil dengan baik                                                                                                                   |
-| Mainline          | [link](https://gitlab.com/chaotic-aur/pkgbuilds/-/tree/main/linux-mainline)    | proses instalasi dan booting berhasil dengan baik                                                                                                                   |
-| Vfio              | [link](https://aur.archlinux.org/linux-vfio.git)                               | proses instalasi dan booting berhasil dengan baik                                                                                                                   |
-| Tachyon           | [link](https://gitlab.com/chaotic-aur/pkgbuilds/-/tree/main/linux-tachyon)     | proses instalasi dan booting berhasil dengan baik                                                                                                                   |
-| linux-git         | [link](https://aur.archlinux.org/linux-git.git)                                | proses instalasi dan booting berhasil dengan baik                                                                                                                   |
-| tkg               | [link](https://github.com/Frogging-Family/linux-tkg)                           | proses instalasi dan booting berhasil namun wireless tidak dapat terdeteksi                                                                                         |
-| linux-lts61       | [link](https://gitlab.com/chaotic-aur/pkgbuilds/-/tree/main/linux-lts61)       | proses instalasi dan booting berhasil dengan baik                                                                                                                   |
-| linux lts         | [link](https://archlinux.org/packages/core/x86_64/linux-lts/)                  | proses instalasi dan booting berhasil dengan baik                                                                                                                   |
-| linux             | [link](https://archlinux.org/packages/core/x86_64/linux/)                      | proses instalasi dan booting berhasil dengan baik                                                                                                                   |
-| Linux- zen        | [link](https://archlinux.org/packages/extra/x86_64/linux-zen/)                 | proses instalasi dan booting berhasil dengan baik                                                                                                                   |
-| linux - rt -lts   | [link](https://archlinux.org/packages/extra/x86_64/linux-rt-lts/)              | proses instalasi dan booting berhasil dengan baik                                                                                                                   |
-| linux - rt        | [link](https://archlinux.org/packages/extra/x86_64/linux-rt/)                  | proses instalasi dan booting berhasil dengan baik                                                                                                                   |
-| lts 66            | [link](https://gitlab.com/chaotic-aur/pkgbuilds/-/tree/main/linux-lts66)       | proses instalasi dan booting berhasil dengan baik                                                                                                                   |
-| vfio-lts          | [link](https://aur.archlinux.org/linux-vfio-lts.git)                           | proses instalasi dan booting berhasil dengan baik                                                                                                                   |
-| nitrous           | [link](https://gitlab.com/chaotic-aur/pkgbuilds/-/tree/main//linux-nitrous)    | proses instalasi berjalan dengan lancar akan tetapi saat melakukan booting terjadi kegagalan, karena saat proses booting terjadi black sreen pada fase booting      |
-| lts515            | [link](https://aur.archlinux.org/linux-lts515.git)                             | proses instalasi berjalan dengan lancar akan tetapi saat melakukan booting terjadi kegagalan, karena saat proses booting terjadi stuck pada fase load module        |
-| lts510            | [link](https://aur.archlinux.org/linux-lts510.git)                             | proses instalasi berjalan dengan lancar akan tetapi saat melakukan booting terjadi kegagalan, karena saat proses booting terjadi stuck pada fase load module        |
-| xanmod            | [link](https://aur.archlinux.org/linux-xanmod.git) | proses instalasi berjalan dengan lancar akan tetapi saat melakukan booting terjadi kegagalan, karena saat proses booting terjadi restart sistem hingga kembali ketampilan grub menu        |
-| xanmod-rt         | [link](https://gitlab.com/chaotic-aur/pkgbuilds/-/tree/main/linux-xanmod-rt) | proses instalasi berjalan dengan lancar akan tetapi saat melakukan booting terjadi kegagalan, karena saat proses booting terjadi restart sistem hingga kembali ketampilan grub menu |
+| Kernel          | Source                                                                      |
+| --------------- | --------------------------------------------------------------------------- |
+| Lqx             | [link](https://liquorix.net)                                                |                                                                                                     
+| Mainline        | [link](https://gitlab.com/chaotic-aur/pkgbuilds/-/tree/main/linux-mainline) |
+| Vfio             | [link](https://aur.archlinux.org/linux-vfio.git)                             |
+| Tachyon         | [link](https://gitlab.com/chaotic-aur/pkgbuilds/-/tree/main/linux-tachyon)  |
+| linux-git       | [link](https://aur.archlinux.org/linux-git.git)                             |
+| tkg             | [link](https://github.com/Frogging-Family/linux-tkg)                        |
+| linux-lts61     | [link](https://gitlab.com/chaotic-aur/pkgbuilds/-/tree/main/linux-lts61)    |
+| linux lts       | [link](https://archlinux.org/packages/core/x86_64/linux-lts/)               |
+| linux           | [link](https://archlinux.org/packages/core/x86_64/linux/)                   |
+| Linux- zen      | [link](https://archlinux.org/packages/extra/x86_64/linux-zen/)              |
+| linux - rt -lts | [link](https://archlinux.org/packages/extra/x86_64/linux-rt-lts/)           |
+| linux - rt      | [link](https://archlinux.org/packages/extra/x86_64/linux-rt/)               |
+| lts 66          | [link](https://gitlab.com/chaotic-aur/pkgbuilds/-/tree/main/linux-lts66)    |
+| vfio-lts         | [link](https://aur.archlinux.org/linux-vfio-lts.git)                         |
+| nitrous         | [link](https://gitlab.com/chaotic-aur/pkgbuilds/-/tree/main//linux-nitrous) |
+| lts515          | [link](https://aur.archlinux.org/linux-lts515.git)                          |
+| lts510          | [link](https://aur.archlinux.org/linux-lts510.git)                          |
+| xanmod          | [link](https://aur.archlinux.org/linux-xanmod.git)                          |
+| xanmod-rt       | [link](https://gitlab.com/chaotic-aur/pkgbuilds/-/tree/main/linux-xanmod-rt)|
 
-Hasil pengujian stabilitas dan kompatibilitas berbagai kernel Linux, di mana sebagian besar kernel berhasil diinstal dan melakukan booting dengan baik sehingga layak dijadikan basis pengembangan. Namun, beberapa kernel mengalami kendala pada tahap booting atau dukungan perangkat keras, seperti kegagalan deteksi wireless dan boot failure, yang menegaskan bahwa pemilihan kernel harus mempertimbangkan stabilitas, kompatibilitas hardware, dan keandalan sistem secara keseluruhan.
+Tabel ini menampilkan daftar berbagai varian kernel Linux yang diuji untuk pengembangan sistem operasi, mencakup kernel stabil (LTS), kernel real-time (RT), kernel optimasi performa (Zen, Tachyon, XFIO), hingga kernel dari repositori pengembangan terbaru (linux-git, tkg, xanmod). Informasi sumber paket disertakan untuk memudahkan akses dan instalasi. Data ini menunjukkan cakupan kernel yang luas, yang memungkinkan evaluasi menyeluruh terhadap stabilitas, kompatibilitas hardware, dan performa sistem operasi berbasis GLAM.
 
-Tabel berikut menampilkan hasil pengujian instalasi dan ketersediaan berbagai browser web yang digunakan sebagai bagian dari evaluasi kompatibilitas aplikasi pada lingkungan sistem operasi berbasis GLAM.
+Tabel berikut menyajikan berbagai desktop environment beserta sumber paketnya, yang digunakan untuk pengujian antarmuka, performa, dan efisiensi penggunaan resource dalam pengembangan sistem operasi berbasis GLAM.
+
+| Desktop Enveroment   | Source                                                                    |
+| -------              | ------------------------------------------------------------------------- |
+| MATE 1.28.2          | [link](https://wiki.archlinux.org/title/MATE)                             |
+| Fluxbox 1.3.7        | [link](https://archlinux.org/packages/extra/x86_64/fluxbox/)               |
+| Openbox 3.6.1        | [link](https://archlinux.org/packages/extra/x86_64/openbox/)              |
+| LXDE 1508            | [link](https://archlinux.org/packages/?sort=&q=lxde&maintainer=&flagged=)  |
+| XFCE 4.20            | [link](https://archlinux.org/packages/?sort=&q=xfce&maintainer=&flagged=)  |
+| IceWM 4.0.0          | [link](https://archlinux.org/packages/extra/x86_64/icewm/)                |
+| LXQt 2.3             | [link](https://archlinux.org/packages/?sort=&q=LXQt+&maintainer=&flagged=) |
+
+Tabel ini menampilkan berbagai desktop environment yang diuji dalam pengembangan sistem operasi, mulai dari yang ringan seperti Fluxbox, Openbox, LXDE, dan IceWM, hingga yang lebih lengkap dan modern seperti MATE, XFCE, dan LXQt. Semua DE memiliki sumber paket yang jelas, memudahkan instalasi dan pengujian. Data ini menunjukkan bahwa setiap DE siap dievaluasi lebih lanjut dari sisi performa, penggunaan resource, dan pengalaman pengguna untuk menentukan antarmuka yang paling sesuai dengan kebutuhan sistem operasi berbasis GLAM.
+
+Tabel berikut menyajikan berbagai browser web beserta sumber paket dan status instalasinya, yang digunakan untuk mengevaluasi kompatibilitas, stabilitas, dan kesiapan aplikasi pada sistem operasi yang dikembangkan.
 
 | Browser  | Source                                                        | Status                       |
 | -------  | --------------------------------------------------------------| ---------------------------- |
-| Firefox  | [link](https://archlinux.org/packages/extra/x86_64/firefox/)  | berhasil                     |
+| Firefox  | [link](https://archlinux.org/packages/extra/x86_64/firefox/)   | berhasil                     |
 | Midori   | [link](https://aur.archlinux.org/midori.git)                  | gagal saat melakukan makepkg |
 | Dillo    | [link](https://aur.archlinux.org/palemoon.git)                | berhasil                     | 
 | Luakit   | [link](https://archlinux.org/packages/extra/x86_64/luakit/)   | berhasil                     |
 | Netsurf  | [link](https://archlinux.org/packages/extra/x86_64/netsurf/)  | berhasil                     |
 | Epiphany | [link](https://archlinux.org/packages/extra/x86_64/epiphany/) | berhasil                     |
 
-Tabel ini menunjukkan hasil pengujian browser pada sistem operasi yang dikembangkan, di mana sebagian besar browser berhasil diinstal dengan baik, sementara Midori mengalami kegagalan pada proses makepkg, menandakan adanya kendala kompatibilitas atau dependensi.
+Tabel ini menunjukkan hasil pengujian instalasi beberapa browser pada sistem operasi yang dikembangkan. Mayoritas browser seperti Firefox, Dillo, Luakit, Netsurf, dan Epiphany berhasil diinstal dengan baik, menandakan kompatibilitas yang baik dengan sistem. Sementara itu, Midori gagal pada tahap makepkg, menunjukkan adanya kendala pada proses kompilasi atau dependensi. Hasil ini menjadi dasar untuk memilih browser yang stabil dan siap digunakan dalam sistem operasi.
 
 ## 4.2. Pelaksanaan Eksperimen
 
@@ -295,9 +315,38 @@ Pengujian kernel Zen dilakukan untuk menilai performa dan responsivitas sistem y
 
 > Di atas adalah hasil testing ketika membuka aplikasi youtube dan slims
 
+Tabel berikut menyajikan hasil pengujian berbagai kernel Linux sebagai bagian dari proses analisis stabilitas, kompatibilitas perangkat keras, dan kelayakan kernel dalam pengembangan sistem operasi berbasis GLAM.
+
+| Kernel   | Source                                                | Status                                  |
+| ------- | --------------------------------------------------------- | --------------------------------------------------------- |
+| Lqx               | [link](https://liquorix.net)                                                   | proses instalasi dan booting berhasil dengan baik                                                                                                                   |
+| Mainline          | [link](https://gitlab.com/chaotic-aur/pkgbuilds/-/tree/main/linux-mainline)    | proses instalasi dan booting berhasil dengan baik                                                                                                                   |
+| Vfio              | [link](https://aur.archlinux.org/linux-vfio.git)                               | proses instalasi dan booting berhasil dengan baik                                                                                                                   |
+| Tachyon           | [link](https://gitlab.com/chaotic-aur/pkgbuilds/-/tree/main/linux-tachyon)     | proses instalasi dan booting berhasil dengan baik                                                                                                                   |
+| linux-git         | [link](https://aur.archlinux.org/linux-git.git)                                | proses instalasi dan booting berhasil dengan baik                                                                                                                   |
+| tkg               | [link](https://github.com/Frogging-Family/linux-tkg)                           | proses instalasi dan booting berhasil namun wireless tidak dapat terdeteksi                                                                                         |
+| linux-lts61       | [link](https://gitlab.com/chaotic-aur/pkgbuilds/-/tree/main/linux-lts61)       | proses instalasi dan booting berhasil dengan baik                                                                                                                   |
+| linux lts         | [link](https://archlinux.org/packages/core/x86_64/linux-lts/)                  | proses instalasi dan booting berhasil dengan baik                                                                                                                   |
+| linux             | [link](https://archlinux.org/packages/core/x86_64/linux/)                      | proses instalasi dan booting berhasil dengan baik                                                                                                                   |
+| Linux- zen        | [link](https://archlinux.org/packages/extra/x86_64/linux-zen/)                 | proses instalasi dan booting berhasil dengan baik                                                                                                                   |
+| linux - rt -lts   | [link](https://archlinux.org/packages/extra/x86_64/linux-rt-lts/)              | proses instalasi dan booting berhasil dengan baik                                                                                                                   |
+| linux - rt        | [link](https://archlinux.org/packages/extra/x86_64/linux-rt/)                  | proses instalasi dan booting berhasil dengan baik                                                                                                                   |
+| lts 66            | [link](https://gitlab.com/chaotic-aur/pkgbuilds/-/tree/main/linux-lts66)       | proses instalasi dan booting berhasil dengan baik                                                                                                                   |
+| vfio-lts          | [link](https://aur.archlinux.org/linux-vfio-lts.git)                           | proses instalasi dan booting berhasil dengan baik                                                                                                                   |
+| nitrous           | [link](https://gitlab.com/chaotic-aur/pkgbuilds/-/tree/main//linux-nitrous)    | proses instalasi berjalan dengan lancar akan tetapi saat melakukan booting terjadi kegagalan, karena saat proses booting terjadi black sreen pada fase booting      |
+| lts515            | [link](https://aur.archlinux.org/linux-lts515.git)                             | proses instalasi berjalan dengan lancar akan tetapi saat melakukan booting terjadi kegagalan, karena saat proses booting terjadi stuck pada fase load module        |
+| lts510            | [link](https://aur.archlinux.org/linux-lts510.git)                             | proses instalasi berjalan dengan lancar akan tetapi saat melakukan booting terjadi kegagalan, karena saat proses booting terjadi stuck pada fase load module        |
+| xanmod            | [link](https://aur.archlinux.org/linux-xanmod.git) | proses instalasi berjalan dengan lancar akan tetapi saat melakukan booting terjadi kegagalan, karena saat proses booting terjadi restart sistem hingga kembali ketampilan grub menu        |
+| xanmod-rt         | [link](https://gitlab.com/chaotic-aur/pkgbuilds/-/tree/main/linux-xanmod-rt) | proses instalasi berjalan dengan lancar akan tetapi saat melakukan booting terjadi kegagalan, karena saat proses booting terjadi restart sistem hingga kembali ketampilan grub menu |
+
+Hasil pengujian stabilitas dan kompatibilitas berbagai kernel Linux, di mana sebagian besar kernel berhasil diinstal dan melakukan booting dengan baik sehingga layak dijadikan basis pengembangan. Namun, beberapa kernel mengalami kendala pada tahap booting atau dukungan perangkat keras, seperti kegagalan deteksi wireless dan boot failure, yang menegaskan bahwa pemilihan kernel harus mempertimbangkan stabilitas, kompatibilitas hardware, dan keandalan sistem secara keseluruhan.
+
+
 ---
 
 ### 4.2.2. Desktop Enviroment
+
+Subbab ini membahas pengujian berbagai desktop environment (DE) untuk sistem operasi yang dikembangkan, dengan fokus pada efisiensi penggunaan resource, performa, stabilitas, dan pengalaman pengguna, guna menentukan antarmuka yang paling sesuai untuk kebutuhan sistem operasi berbasis GLAM.
 
 #### 4.2.2.1. fluxbox
 
@@ -411,9 +460,25 @@ Pengujian desktop environment LXQt dilakukan untuk menilai efisiensi penggunaan 
 
 > bukti saat pemakaian
 
+Tabel berikut menyajikan hasil pengujian instalasi berbagai desktop environment pada sistem operasi yang dikembangkan, mencakup versi, sumber paket, serta status keberhasilan instalasi sebagai dasar evaluasi antarmuka dan performa sistem.
+
+| Desktop Enveroment   | Source                                                | Status                              |
+| ------- | --------------------------------------------------------- |--------------------------------------------------------- |
+| MATE 1.28.2    | [link](https://wiki.archlinux.org/title/MATE)                                 | Berhasil |
+| Fluxbox 1.3.7  | [link](https://archlinux.org/packages/extra/x86_64/fluxbox/)                  | Berhasil |
+| Openbox 3.6.1  | [link](https://archlinux.org/packages/extra/x86_64/openbox/)                  | Berhasil |
+| LXDE 1508      | [link](https://archlinux.org/packages/?sort=&q=lxde&maintainer=&flagged=)     | Berhasil |
+| XFCE 4.20      | [link](https://archlinux.org/packages/?sort=&q=xfce&maintainer=&flagged=)     | Berhasil |
+| IceWM 4.0.0    | [link](https://archlinux.org/packages/extra/x86_64/icewm/)                    | Berhasil |
+| LXQt 2.3       | [link](https://archlinux.org/packages/?sort=&q=LXQt+&maintainer=&flagged=)    | Berhasil |
+
+Tabel ini menunjukkan bahwa semua desktop environment yang diuji — MATE, Fluxbox, Openbox, LXDE, XFCE, IceWM, dan LXQt — berhasil diinstal dengan baik. Hal ini menandakan bahwa versi-versi yang digunakan kompatibel dengan sistem operasi yang dikembangkan, dan siap untuk diuji lebih lanjut dari sisi performa, penggunaan resource, serta pengalaman pengguna. Dengan keberhasilan instalasi ini, setiap DE dapat dievaluasi untuk menentukan antarmuka yang paling ringan, responsif, dan sesuai kebutuhan target sistem operasi berbasis GLAM.
+
 ---
 
 ## 4.3. Browser
+
+Subbab ini menyajikan hasil pengujian berbagai browser web pada sistem operasi yang dikembangkan, meliputi performa, penggunaan resource, stabilitas, dan pengalaman pengguna, sebagai dasar pemilihan browser yang paling optimal untuk lingkungan sistem operasi berbasis GLAM.
 
 ### 4.3.1. falcon
 
@@ -575,6 +640,20 @@ Berdasarkan hasil pengujian, Epiphany mengalami crash dan lag saat digunakan, na
 
 Secara keseluruhan, Epiphany menawarkan pengalaman pengguna yang baik dari sisi tampilan dan kemudahan, namun memiliki keterbatasan pada aspek performa dan stabilitas saat digunakan secara intensif.
 
+Tabel berikut menampilkan hasil pengujian instalasi dan ketersediaan berbagai browser web yang digunakan sebagai bagian dari evaluasi kompatibilitas aplikasi pada lingkungan sistem operasi berbasis GLAM.
+
+| Browser  | Source                                                        | Status                       |
+| -------  | --------------------------------------------------------------| ---------------------------- |
+| Firefox  | [link](https://archlinux.org/packages/extra/x86_64/firefox/)   | berhasil                     |
+| Midori   | [link](https://aur.archlinux.org/midori.git)                  | gagal saat melakukan makepkg |
+| Dillo    | [link](https://aur.archlinux.org/palemoon.git)                | berhasil                     | 
+| Luakit   | [link](https://archlinux.org/packages/extra/x86_64/luakit/)   | berhasil                     |
+| Netsurf  | [link](https://archlinux.org/packages/extra/x86_64/netsurf/)  | berhasil                     |
+| Epiphany | [link](https://archlinux.org/packages/extra/x86_64/epiphany/) | berhasil                     |
+
+Tabel ini menunjukkan hasil pengujian browser pada sistem operasi yang dikembangkan, di mana sebagian besar browser berhasil diinstal dengan baik, sementara Midori mengalami kegagalan pada proses makepkg, menandakan adanya kendala kompatibilitas atau dependensi.
+
+---
 
 ## Conclusion
 
