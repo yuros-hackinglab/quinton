@@ -488,4 +488,4 @@ Storage : HDD, 300G)
 - Berdasarkan data sampel spesifikasi yang dikumpulkan maka dapat disimpulkan spesifikasi komputer berada pada level low sampai dengan mid end
 - Rekomendasi kernel untuk sistem operasi berbasis GLAM adalah linux-zen, linux-vfio dan linux-vfio-lts
 - Rekomendasi desktop environment untuk sistem operasi berbasis GLAM adalah Gnome dan Openbox
-- Rekomendasi browser untuk sistem operasi berbasis GLAM adalah Epiphany
+- Rekomendasi browser untuk sistem operasi berbasis GLAM adalah Firefox dan Epiphany
