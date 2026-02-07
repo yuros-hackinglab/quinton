@@ -143,10 +143,6 @@ Pengujian kernel dilihat dari lima instrumen yaitu CPU idle, RAM idle, CPU pemak
 
 Pengujian kernel VFIO dilakukan untuk mengevaluasi dukungan virtualisasi, stabilitas sistem, serta kelayakannya sebagai kernel yang digunakan dalam pengembangan dan pengujian sistem operasi berbasis GLAM.
 
-| Kernel | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | Load Firefox |
-| ------ | -------- | -------- | ------------- | ------------- | ------------ |
-| vfio    | 26,9%    | 354M     | 66,2–87,3%    | 1,4G          | 37 detik     |
-
 <img src="data/image/linux-vfio-idle.png" width="800">
 
 > Berikut hasil testing kernel pada saat tidak menjalankan aplikasi
@@ -155,13 +151,15 @@ Pengujian kernel VFIO dilakukan untuk mengevaluasi dukungan virtualisasi, stabil
 
 > Di atas adalah hasil testing ketika membuka aplikasi youtube dan slims
 
+| Kernel | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | Load Firefox |
+| ------ | -------- | -------- | ------------- | ------------- | ------------ |
+| vfio    | 26,9%    | 354M     | 66,2–87,3%    | 1,4G          | 37 detik     |
+
+Penggunaan resource pada kernel VFIO dicatat sedang; saat kondisi idle, CPU digunakan sebesar 26,9% dan RAM sebesar 354 MB, sedangkan saat penggunaan aktif, CPU meningkat menjadi 66,2–87,3% dan RAM menjadi 1,4 GB. Waktu load Firefox tercatat 37 detik, yang menunjukkan bahwa aplikasi dapat dijalankan dengan stabil meskipun beban CPU meningkat secara signifikan. Hasil ini menunjukkan bahwa performa kernel cukup handal, namun manajemen CPU yang baik tetap diperlukan saat menjalankan aplikasi berat.
+
 #### 4.2.1.2. kernel git
 
 Pengujian kernel Git dilakukan untuk mengevaluasi performa, stabilitas, dan kompatibilitas perangkat keras pada versi kernel yang dikembangkan langsung dari repositori sumber, guna menilai kelayakannya sebagai basis sistem operasi berbasis GLAM.
-
-| Kernel | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | Load Firefox |
-| ------ | -------- | -------- | ------------- | ------------- | ------------ |
-| git    | 1-2,6%    | 576M     | 66,2–99,1%    | 1,08G         | 13 detik     |
 
 <img src="data/image/linux-git-idle.png" width="800">
 
@@ -171,13 +169,15 @@ Pengujian kernel Git dilakukan untuk mengevaluasi performa, stabilitas, dan komp
 
 > Di atas adalah hasil testing ketika membuka aplikasi youtube dan slims
 
+| Kernel | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | Load Firefox |
+| ------ | -------- | -------- | ------------- | ------------- | ------------ |
+| git    | 1-2,6%    | 576M     | 66,2–99,1%    | 1,08G         | 13 detik     |
+
+Penggunaan resource pada kernel Git dicatat sangat rendah saat idle, dengan CPU 1–2,6% dan RAM 576 MB, sedangkan saat digunakan aktif, CPU meningkat menjadi 66,2–99,1% dan RAM menjadi 1,08 GB. Waktu load Firefox tercatat 13 detik, yang menunjukkan bahwa aplikasi dapat dijalankan dengan cepat dan stabil meskipun beban CPU meningkat secara signifikan saat penggunaan aktif. Hasil ini menegaskan bahwa kernel Git mampu menangani aplikasi dengan efisien, terutama dari sisi waktu respon, namun tetap memerlukan perhatian pada beban CPU tinggi.
+
 #### 4.2.1.3. kernel lqx
 
 Pengujian kernel Lqx dilakukan untuk menilai performa dan stabilitasnya dalam kondisi sistem nyata, serta mengevaluasi kemampuannya dalam mendukung aplikasi dan layanan yang dijalankan pada sistem operasi yang dikembangkan untuk GLAM.
-
-| Kernel | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | Load Firefox |
-| ------ | -------- | -------- | ------------- | ------------- | ------------ |
-| lqx    | 1,9%     | 661M     | 36-89%        | 1,23G         | 30 detik     |
 
 <img src="data/image/linux-lqx-idle.png" width="800">
 
@@ -187,13 +187,15 @@ Pengujian kernel Lqx dilakukan untuk menilai performa dan stabilitasnya dalam ko
 
 > Di atas adalah hasil testing ketika membuka aplikasi youtube dan slims
 
+| Kernel | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | Load Firefox |
+| ------ | -------- | -------- | ------------- | ------------- | ------------ |
+| lqx    | 1,9%     | 661M     | 36-89%        | 1,23G         | 30 detik     |
+
+Penggunaan resource pada kernel Lqx dicatat rendah saat kondisi idle, dengan CPU sebesar 1,9% dan RAM sebesar 661 MB, sedangkan saat digunakan aktif, CPU meningkat menjadi 36–89% dan RAM menjadi 1,23 GB. Waktu load Firefox tercatat 30 detik, yang menunjukkan bahwa aplikasi dapat dijalankan dengan stabil meskipun terjadi peningkatan signifikan pada penggunaan CPU. Hasil ini menunjukkan bahwa kernel Lqx menawarkan keseimbangan antara efisiensi penggunaan resource saat idle dan kemampuan menangani beban kerja aktif.
+
 #### 4.2.1.4. kernel lts61
 
 Pengujian kernel LTS61 dilakukan untuk mengevaluasi stabilitas jangka panjang, penggunaan resource, dan kompatibilitas perangkat keras, sebagai bagian dari penilaian kelayakan kernel ini untuk pengembangan sistem operasi yang handal berbasis GLAM.
-
-| Kernel | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | Load Firefox |
-| ------ | -------- | -------- | ------------- | ------------- | ------------ |
-| lts61  | 2,2-3,8% | 600M     | 24-94%        | 1,21G         | 22 detik     |
 
 <img src="data/image/linux-lts61-idle.png" width="800">
 
@@ -203,13 +205,15 @@ Pengujian kernel LTS61 dilakukan untuk mengevaluasi stabilitas jangka panjang, p
 
 > Di atas adalah hasil testing ketika membuka aplikasi youtube dan slims
 
+| Kernel | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | Load Firefox |
+| ------ | -------- | -------- | ------------- | ------------- | ------------ |
+| lts61  | 2,2-3,8% | 600M     | 24-94%        | 1,21G         | 22 detik     |
+
+Penggunaan resource pada kernel LTS61 dicatat rendah saat idle, dengan CPU 2,2–3,8% dan RAM 600 MB, sedangkan saat digunakan aktif, CPU meningkat menjadi 24–94% dan RAM menjadi 1,21 GB. Waktu load Firefox tercatat 22 detik, yang menunjukkan bahwa aplikasi dapat dijalankan dengan cepat dan stabil meskipun beban CPU meningkat secara signifikan. Hasil ini menunjukkan bahwa kernel LTS61 mampu memberikan efisiensi penggunaan resource yang baik saat idle sekaligus menjaga performa saat beban kerja tinggi.
+
 #### 4.2.1.5. kernel lts66
 
 Pengujian kernel LTS66 dilakukan untuk menilai performa, stabilitas, dan efisiensi penggunaan resource pada lingkungan sistem nyata, sekaligus mengevaluasi kelayakannya sebagai kernel jangka panjang untuk pengembangan sistem operasi berbasis GLAM.
-
-| Kernel | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | Load Firefox |
-| ------ | -------- | -------- | ------------- | ------------- | ------------ |
-| lts66  | 1,9%     | 630M     | 39,8-96%      | 1,11G         | 24 detik     |
 
 <img src="data/image/linux-lts66-idle.png" width="800">
 
@@ -219,13 +223,15 @@ Pengujian kernel LTS66 dilakukan untuk menilai performa, stabilitas, dan efisien
 
 > Di atas adalah hasil testing ketika membuka aplikasi youtube dan slims
 
+| Kernel | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | Load Firefox |
+| ------ | -------- | -------- | ------------- | ------------- | ------------ |
+| lts66  | 1,9%     | 630M     | 39,8-96%      | 1,11G         | 24 detik     |
+
+Penggunaan resource pada kernel LTS66 dicatat rendah saat idle, dengan CPU sebesar 1,9% dan RAM sebesar 630 MB, sedangkan saat digunakan aktif, CPU meningkat menjadi 39,8–96% dan RAM menjadi 1,11 GB. Waktu load Firefox tercatat 24 detik, yang menunjukkan bahwa aplikasi dapat dijalankan dengan stabil meskipun terjadi peningkatan signifikan pada penggunaan CPU. Hasil ini menunjukkan bahwa kernel LTS66 mampu menjaga efisiensi resource saat idle sekaligus mempertahankan performa yang baik saat beban kerja tinggi.
+
 #### 4.2.1.6. kernel mainline
 
 Pengujian kernel Mainline dilakukan untuk mengevaluasi kinerja terbaru dari pengembangan inti Linux, termasuk stabilitas, kompatibilitas perangkat keras, dan kemampuan menjalankan aplikasi secara optimal dalam sistem operasi yang dikembangkan untuk GLAM.
-
-| Kernel   | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | Load Firefox |
-| ------   | -------- | -------- | ------------- | ------------- | ------------ |
-| mainline | 1,9%     | 360M     | 36-86%        | 971G          | 35 detik     |
 
 <img src="data/image/linux-mainline-idle.png" width="800">
 
@@ -235,13 +241,15 @@ Pengujian kernel Mainline dilakukan untuk mengevaluasi kinerja terbaru dari peng
 
 > Di atas adalah hasil testing ketika membuka aplikasi youtube dan slims
 
+| Kernel   | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | Load Firefox |
+| ------   | -------- | -------- | ------------- | ------------- | ------------ |
+| mainline | 1,9%     | 360M     | 36-86%        | 971G          | 35 detik     |
+
+Penggunaan resource pada kernel Mainline dicatat sangat rendah saat idle, dengan CPU 1,9% dan RAM 360 MB, sedangkan saat digunakan aktif, CPU meningkat menjadi 36–86% dan RAM menjadi 971 MB. Waktu load Firefox tercatat 35 detik, yang menunjukkan bahwa aplikasi dapat dijalankan dengan stabil meskipun terjadi peningkatan signifikan pada penggunaan CPU. Hasil ini menunjukkan bahwa kernel Mainline mampu menjaga efisiensi penggunaan resource saat idle sekaligus memberikan performa yang baik saat beban kerja aktif.
+
 #### 4.2.1.7. kernel rt
 
 Pengujian kernel RT dilakukan untuk menilai kemampuan sistem dalam menangani proses real-time, termasuk stabilitas, responsivitas, dan penggunaan resource, sebagai bagian dari evaluasi kesesuaian kernel ini untuk aplikasi yang membutuhkan determinisme tinggi pada sistem operasi berbasis GLAM.
-
-| Kernel | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | Load Firefox |
-| ------ | -------- | -------- | ------------- | ------------- | ------------ |
-| rt     | 5,4%     | 538M     | 43,8%         | 1,18G         | 12 detik     |
 
 <img src="data/image/linux-rt-idle.png" width="800">
 
@@ -251,13 +259,15 @@ Pengujian kernel RT dilakukan untuk menilai kemampuan sistem dalam menangani pro
 
 > Di atas adalah hasil testing ketika membuka aplikasi youtube dan slims
 
+| Kernel | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | Load Firefox |
+| ------ | -------- | -------- | ------------- | ------------- | ------------ |
+| rt     | 5,4%     | 538M     | 43,8%         | 1,18G         | 12 detik     |
+
+Penggunaan resource pada kernel RT dicatat rendah hingga sedang saat idle, dengan CPU sebesar 5,4% dan RAM sebesar 538 MB, sedangkan saat digunakan aktif, CPU tercatat 43,8% dan RAM 1,18 GB. Waktu load Firefox tercatat 12 detik, yang menunjukkan bahwa aplikasi dapat dijalankan dengan cepat dan stabil. Hasil ini menunjukkan bahwa kernel RT mampu memberikan responsivitas yang baik sekaligus menjaga efisiensi penggunaan resource pada sistem operasi.
+
 #### 4.2.1.8. kernel rt-lts
 
 Pengujian kernel RT-LTS dilakukan untuk mengevaluasi kinerja real-time dengan dukungan jangka panjang, menilai stabilitas, responsivitas, dan penggunaan resource, serta menilai kelayakannya sebagai kernel andal untuk aplikasi yang membutuhkan determinisme tinggi pada sistem operasi berbasis GLAM.
-
-| Kernel | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | Load Firefox |
-| ------ | -------- | -------- | ------------- | ------------- | ------------ |
-| rt-lts | 1,9%     | 435M     | 50-94%        | 1,14G         | 21 detik     |
 
 <img src="data/image/linux-rt-lts-idle.png" width="800">
 
@@ -267,13 +277,15 @@ Pengujian kernel RT-LTS dilakukan untuk mengevaluasi kinerja real-time dengan du
 
 > Di atas adalah hasil testing ketika membuka aplikasi youtube dan slims
 
+| Kernel | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | Load Firefox |
+| ------ | -------- | -------- | ------------- | ------------- | ------------ |
+| rt-lts | 1,9%     | 435M     | 50-94%        | 1,14G         | 21 detik     |
+
+Penggunaan resource pada kernel RT-LTS dicatat sangat rendah saat idle, dengan CPU 1,9% dan RAM 435 MB, sedangkan saat digunakan aktif, CPU meningkat menjadi 50–94% dan RAM menjadi 1,14 GB. Waktu load Firefox tercatat 21 detik, menunjukkan bahwa aplikasi dapat dijalankan dengan stabil meskipun beban CPU meningkat secara signifikan. Hasil ini menegaskan bahwa kernel RT-LTS mampu menjaga efisiensi resource saat idle sekaligus mempertahankan performa yang baik saat sistem bekerja aktif.
+
 #### 4.2.1.9. kernel tachyon
 
 Pengujian kernel Tachyon dilakukan untuk menilai performa tinggi dan optimasi sistem, termasuk stabilitas, efisiensi penggunaan resource, dan kompatibilitas perangkat keras, guna mengevaluasi kelayakannya sebagai kernel yang cepat dan responsif untuk pengembangan sistem operasi berbasis GLAM.
-
-| Kernel | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | Load Firefox |
-| ------ | -------- | -------- | ------------- | ------------- | ------------ |
-| tachyon| 1,6%     | 323M     | 36,8-90,1%    | 1,4G         | 35 detik     |
 
 <img src="data/image/linux-tachyon-idle.png" width="800">
 
@@ -283,13 +295,15 @@ Pengujian kernel Tachyon dilakukan untuk menilai performa tinggi dan optimasi si
 
 > Di atas adalah hasil testing ketika membuka aplikasi youtube dan slims
 
+| Kernel | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | Load Firefox |
+| ------ | -------- | -------- | ------------- | ------------- | ------------ |
+| tachyon| 1,6%     | 323M     | 36,8-90,1%    | 1,4G         | 35 detik     |
+
+Penggunaan resource pada kernel Tachyon dicatat sangat rendah saat idle, dengan CPU 1,6% dan RAM 323 MB, sedangkan saat digunakan aktif, CPU meningkat menjadi 36,8–90,1% dan RAM menjadi 1,4 GB. Waktu load Firefox tercatat 35 detik, menunjukkan bahwa aplikasi dapat dijalankan dengan stabil meskipun beban CPU meningkat secara signifikan. Hasil ini menunjukkan bahwa kernel Tachyon menawarkan efisiensi penggunaan resource yang baik saat idle sekaligus performa yang handal saat beban kerja tinggi.
+
 #### 4.2.1.10. kernel vfio-lts
 
 Pengujian kernel VFIO-LTS dilakukan untuk mengevaluasi stabilitas jangka panjang dan dukungan virtualisasi, termasuk penggunaan resource serta kompatibilitas perangkat keras, sebagai dasar penilaian kelayakan kernel ini dalam pengembangan sistem operasi yang andal.
-
-| Kernel | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | Load Firefox |
-| ------ | -------- | -------- | ------------- | ------------- | ------------ |
-| vfio-lts| 2%       | 565M     | 40-90%        | 1,03G         | 21 detik     |
 
 <img src="data/image/linux-vfio-lts-idle.png" width="800">
 
@@ -299,13 +313,15 @@ Pengujian kernel VFIO-LTS dilakukan untuk mengevaluasi stabilitas jangka panjang
 
 > Di atas adalah hasil testing ketika membuka aplikasi youtube dan slims
 
+| Kernel | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | Load Firefox |
+| ------ | -------- | -------- | ------------- | ------------- | ------------ |
+| vfio-lts| 2%       | 565M     | 40-90%        | 1,03G         | 21 detik     |
+
+Penggunaan resource pada kernel VFIO-LTS dicatat rendah saat idle, dengan CPU 2% dan RAM 565 MB, sedangkan saat digunakan aktif, CPU meningkat menjadi 40–90% dan RAM menjadi 1,03 GB. Waktu load Firefox tercatat 21 detik, menunjukkan bahwa aplikasi dapat dijalankan dengan stabil meskipun terjadi peningkatan signifikan pada penggunaan CPU. Hasil ini menegaskan bahwa kernel VFIO-LTS mampu menjaga efisiensi resource saat idle sekaligus memberikan performa yang handal saat beban kerja tinggi.
+
 #### 4.2.1.11. kernel zen
 
 Pengujian kernel Zen dilakukan untuk menilai performa dan responsivitas sistem yang dioptimalkan, termasuk penggunaan resource, stabilitas, dan kompatibilitas perangkat keras, sebagai bagian dari evaluasi kernel yang cepat dan efisien untuk pengembangan sistem operasi berbasis GLAM.
-
-| Kernel | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | Load Firefox |
-| ------ | -------- | -------- | ------------- | ------------- | ------------ |
-| zen    | 5,4%     | 538M     | 41,7%         | 1,18G         | 12 detik     |
 
 <img src="data/image/linux-zen-idle.png" width="800">
 
@@ -314,6 +330,12 @@ Pengujian kernel Zen dilakukan untuk menilai performa dan responsivitas sistem y
 <img src="data/image/linux-zen-using.png" width="800">
 
 > Di atas adalah hasil testing ketika membuka aplikasi youtube dan slims
+
+| Kernel | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | Load Firefox |
+| ------ | -------- | -------- | ------------- | ------------- | ------------ |
+| zen    | 5,4%     | 538M     | 41,7%         | 1,18G         | 12 detik     |
+
+Pada kernel Zen, kondisi idle ditunjukkan dengan penggunaan CPU sebesar 5,4% dan RAM sebesar 538 MB. Saat sistem berada pada kondisi pemakaian, penggunaan CPU tercatat 41,7% dengan konsumsi RAM meningkat menjadi 1,18 GB. Waktu pemuatan (load) Firefox dicatat selama 12 detik, sehingga dapat disimpulkan bahwa kernel Zen memberikan respons aplikasi yang cepat dengan penggunaan sumber daya yang relatif stabil.
 
 Tabel berikut menyajikan hasil pengujian berbagai kernel Linux sebagai bagian dari proses analisis stabilitas, kompatibilitas perangkat keras, dan kelayakan kernel dalam pengembangan sistem operasi berbasis GLAM.
 
@@ -352,10 +374,6 @@ Subbab ini membahas pengujian berbagai desktop environment (DE) untuk sistem ope
 
 Pengujian desktop environment Fluxbox dilakukan untuk menilai efisiensi penggunaan resource, performa, dan pengalaman pengguna, serta mengevaluasi kelayakannya sebagai antarmuka ringan pada sistem operasi yang dikembangkan untuk GLAM.
 
-| Desktop Environment | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | UX |
-|---------------------|----------|----------|---------------|---------------|----|
-| Fluxbox 1.3.7 | 2,6% | 309M | 3,6–49,7% | 887M | Tampilan minimalis dan cenderung kaku; tidak ada dark mode bawaan. Navigasi menu cukup sulit bagi pemula karena berbasis klik kanan tanpa panel modern. Respons mouse dan keyboard baik, sistem terasa ringan dan cepat, namun fitur visual terbatas serta tidak ada dock bawaan. |
-
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/0a3e873c-d589-4686-bf6a-425e856393af" />
 
 > bukti saat idle
@@ -363,14 +381,16 @@ Pengujian desktop environment Fluxbox dilakukan untuk menilai efisiensi pengguna
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/2e276cc5-5a57-498e-93a5-a885d7dd54c9" />
 
 > bukti saat pemakaian
+
+| Desktop Environment | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | UX |
+|---------------------|----------|----------|---------------|---------------|----|
+| Fluxbox 1.3.7 | 2,6% | 309M | 3,6–49,7% | 887M | Tampilan minimalis dan cenderung kaku; tidak ada dark mode bawaan. Navigasi menu cukup sulit bagi pemula karena berbasis klik kanan tanpa panel modern. Respons mouse dan keyboard baik, sistem terasa ringan dan cepat, namun fitur visual terbatas serta tidak ada dock bawaan. |
+
+Pada Fluxbox 1.3.7, kondisi idle ditunjukkan oleh penggunaan CPU sebesar 2,6% dan RAM 309 MB. Saat pemakaian, penggunaan CPU berada pada rentang 3,6–49,7% dengan konsumsi RAM meningkat menjadi 887 MB. Dari sisi UX, tampilan disajikan secara minimalis dan kaku, tanpa dukungan dark mode bawaan. Navigasi dianggap kurang ramah bagi pemula karena bergantung pada menu klik kanan dan tidak dilengkapi panel modern. Meskipun demikian, respons mouse dan keyboard dirasakan baik, sistem berjalan ringan dan cepat, namun dengan keterbatasan fitur visual serta ketiadaan dock bawaan.
   
 #### 4.2.2.2. Openbox
 
 Pengujian desktop environment Openbox dilakukan untuk mengevaluasi performa, penggunaan resource, dan pengalaman pengguna, serta menilai kecocokannya sebagai antarmuka ringan dan responsif pada sistem operasi yang dikembangkan untuk GLAM.
-
-| Desktop Environment | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | UX |
-|---------------------|----------|----------|---------------|---------------|----|
-| Openbox 3.6.1 | 1% | 394M | 40–67% | 1,02G | Tampilan sangat minimalis (default hanya layar hitam) dengan dark mode. Navigasi menu sulit dan pengaturan sistem harus dipasang manual, sehingga tidak ramah pemula. Respons workspace cepat dan animasi halus, namun touchpad untuk klik tidak berfungsi serta tampilan kurang user-friendly tanpa konfigurasi tambahan. |
 
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/ccd144e0-63b3-4b50-b6cf-a135e6ff814b" />
 
@@ -380,13 +400,15 @@ Pengujian desktop environment Openbox dilakukan untuk mengevaluasi performa, pen
 
 > bukti saat pemakaian
 
+| Desktop Environment | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | UX |
+|---------------------|----------|----------|---------------|---------------|----|
+| Openbox 3.6.1 | 1% | 394M | 40–67% | 1,02G | Tampilan sangat minimalis (default hanya layar hitam) dengan dark mode. Navigasi menu sulit dan pengaturan sistem harus dipasang manual, sehingga tidak ramah pemula. Respons workspace cepat dan animasi halus, namun touchpad untuk klik tidak berfungsi serta tampilan kurang user-friendly tanpa konfigurasi tambahan. |
+
+Pada Openbox 3.6.1, penggunaan CPU saat idle tercatat sebesar 1% dengan konsumsi RAM 394 MB, sedangkan pada kondisi pemakaian penggunaan CPU berada pada kisaran 40–67% dan RAM meningkat hingga 1,02 GB; dari sisi pengalaman pengguna, tampilan yang disajikan bersifat sangat minimalis dengan kondisi bawaan berupa layar hitam serta dukungan dark mode, navigasi menu dinilai cukup sulit dan pengaturan sistem harus dilakukan secara manual sehingga kurang ramah bagi pemula, meskipun respons perpindahan workspace terasa cepat dan animasi berjalan halus, fungsi touchpad untuk klik dilaporkan tidak berfungsi optimal serta tampilan keseluruhan kurang user-friendly tanpa konfigurasi tambahan.
+
 #### 4.2.2.3. lxde 
 
 Pengujian desktop environment LXDE dilakukan untuk menilai efisiensi penggunaan resource, performa sistem, dan pengalaman pengguna, serta mengevaluasi kelayakannya sebagai antarmuka ringan yang cocok untuk sistem operasi berbasis GLAM dengan spesifikasi terbatas.
-
-| Desktop Environment | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | UX |
-|---------------------|----------|----------|---------------|---------------|----|
-| LXDE 1508 | 2,3% | 482M | 30–60% | 1020M | Tampilan klasik dengan dark mode dan navigasi menu yang mudah, sehingga ramah untuk pemula. Pengaturan sistem cukup lengkap meski tersebar di banyak bagian. Respons mouse dan keyboard baik, switching workspace lancar, namun animasi kurang halus dan ada jeda saat membuka aplikasi serta lag saat scroll YouTube. |
 
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/16443ce9-0a6f-491b-8116-0b7560a45bf1" />
 
@@ -396,13 +418,15 @@ Pengujian desktop environment LXDE dilakukan untuk menilai efisiensi penggunaan 
 
 > bukti saat pemakaian
 
+| Desktop Environment | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | UX |
+|---------------------|----------|----------|---------------|---------------|----|
+| LXDE 1508 | 2,3% | 482M | 30–60% | 1020M | Tampilan klasik dengan dark mode dan navigasi menu yang mudah, sehingga ramah untuk pemula. Pengaturan sistem cukup lengkap meski tersebar di banyak bagian. Respons mouse dan keyboard baik, switching workspace lancar, namun animasi kurang halus dan ada jeda saat membuka aplikasi serta lag saat scroll YouTube. |
+
+Pada LXDE 1508, penggunaan CPU saat idle berada pada kisaran 2,3% dengan konsumsi RAM sebesar 482 MB, sedangkan pada kondisi pemakaian CPU tercatat 30–60% dan RAM meningkat hingga 1.020 MB; dari sisi pengalaman pengguna, tampilan yang disajikan bersifat klasik dengan dukungan dark mode serta navigasi menu yang mudah dipahami sehingga dinilai ramah bagi pemula, pengaturan sistem tersedia cukup lengkap meskipun tersebar di beberapa bagian, respons mouse dan keyboard berjalan baik serta perpindahan workspace terasa lancar, namun animasi dinilai kurang halus dan ditemukan jeda saat membuka aplikasi serta lag ketika melakukan scroll pada YouTube.
+
 #### 4.2.2.4. mate
 
 Pengujian desktop environment MATE dilakukan untuk mengevaluasi performa, penggunaan resource, dan pengalaman pengguna, serta menilai kecocokannya sebagai antarmuka yang stabil dan fungsional pada sistem operasi berbasis GLAM yang dikembangkan.
-
-| Desktop Environment | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | UX |
-|---------------------|----------|----------|---------------|---------------|----|
-| MATE 1.28.2 | 1,9% | 558M | 82,2–98% | 1,11G | Tampilan default terkesan kuno namun mendukung dark mode. Navigasi menu mudah dan pengaturan sistem lengkap, sehingga ramah untuk pemula. Respons mouse dan keyboard baik dengan animasi halus, tetapi terdapat delay saat membuka halaman baru, berpindah tab, dan scroll YouTube. |
 
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/3eefd623-b037-4d55-9554-82e2d8cfaadd" />
 
@@ -412,13 +436,15 @@ Pengujian desktop environment MATE dilakukan untuk mengevaluasi performa, penggu
 
 > bukti saat pemakaian
 
+| Desktop Environment | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | UX |
+|---------------------|----------|----------|---------------|---------------|----|
+| MATE 1.28.2 | 1,9% | 558M | 82,2–98% | 1,11G | Tampilan default terkesan kuno namun mendukung dark mode. Navigasi menu mudah dan pengaturan sistem lengkap, sehingga ramah untuk pemula. Respons mouse dan keyboard baik dengan animasi halus, tetapi terdapat delay saat membuka halaman baru, berpindah tab, dan scroll YouTube. |
+
+Pada MATE 1.28.2, penggunaan CPU saat kondisi idle tercatat sebesar 1,9% dengan konsumsi RAM 558 MB, sementara pada kondisi pemakaian CPU meningkat pada kisaran 82,2–98% dan penggunaan RAM mencapai 1,11 GB; dari sisi pengalaman pengguna, tampilan default dinilai terkesan kuno namun telah mendukung dark mode, navigasi menu dapat digunakan dengan mudah dan pengaturan sistem tersedia lengkap sehingga dinilai ramah bagi pemula, respons mouse dan keyboard berjalan baik dengan animasi yang relatif halus, meskipun masih ditemukan delay saat membuka halaman baru, berpindah tab, serta ketika melakukan scroll pada YouTube.
+
 #### 4.2.2.5. XFCE
 
 Pengujian desktop environment XFCE dilakukan untuk menilai efisiensi penggunaan resource, performa, dan pengalaman pengguna, serta mengevaluasi kelayakannya sebagai antarmuka ringan dan stabil yang sesuai untuk sistem operasi berbasis GLAM dengan fokus pada kecepatan dan responsivitas.
-
-| Desktop Environment | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | UX |
-|---------------------|----------|----------|---------------|---------------|----|
-| XFCE 4.20 | 2% | 565M | 40–90% | 1,03G | Tampilan default terkesan kuno namun mendukung dark mode. Navigasi menu mudah dan pengaturan sistem lengkap, sehingga ramah untuk pemula. Respons mouse dan keyboard baik dengan animasi halus, serta stabil untuk penggunaan harian, meskipun ada sedikit lag saat membuka halaman baru dan scroll YouTube. |
 
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/6927ec12-735e-404d-9903-60d731c336d5" />
 
@@ -428,13 +454,15 @@ Pengujian desktop environment XFCE dilakukan untuk menilai efisiensi penggunaan 
 
 > bukti saat pemakaian
 
+| Desktop Environment | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | UX |
+|---------------------|----------|----------|---------------|---------------|----|
+| XFCE 4.20 | 2% | 565M | 40–90% | 1,03G | Tampilan default terkesan kuno namun mendukung dark mode. Navigasi menu mudah dan pengaturan sistem lengkap, sehingga ramah untuk pemula. Respons mouse dan keyboard baik dengan animasi halus, serta stabil untuk penggunaan harian, meskipun ada sedikit lag saat membuka halaman baru dan scroll YouTube. |
+
+Pada XFCE 4.20, penggunaan CPU pada kondisi idle tercatat sebesar 2% dengan konsumsi RAM 565 MB, sedangkan saat pemakaian CPU berada pada kisaran 40–90% dengan penggunaan RAM mencapai 1,03 GB; dari sisi pengalaman pengguna, tampilan default dinilai terkesan kuno namun telah mendukung dark mode, navigasi menu dapat digunakan dengan mudah dan pengaturan sistem tersedia lengkap sehingga ramah bagi pemula, respons mouse dan keyboard berjalan baik dengan animasi yang halus serta dinilai stabil untuk penggunaan harian, meskipun masih ditemukan sedikit lag saat membuka halaman baru dan melakukan scroll pada YouTube.
+
 #### 4.2.2.6. icewm
 
 Pengujian desktop environment IceWM dilakukan untuk mengevaluasi performa, penggunaan resource, dan pengalaman pengguna, serta menilai kelayakannya sebagai antarmuka ringan dan sederhana yang mendukung sistem operasi berbasis GLAM dengan spesifikasi terbatas.
-
-| Desktop Environment | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | UX |
-|---------------------|----------|----------|---------------|---------------|----|
-| IceWM 4.0.0 | 2,9% | 418M | 36–90% | 1,14G | Tampilan default sangat sederhana dengan taskbar di bawah dan mendukung dark mode. Navigasi menu sedikit sulit bagi pengguna baru meski pengaturan sistem cukup lengkap. Respons mouse dan keyboard baik dengan animasi halus, serta performa stabil, namun tampilan terasa tua dan ada sedikit delay saat scroll YouTube. | 
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/92925252-5d5e-4848-8fe7-c3fef5c43d91" />
 
@@ -444,13 +472,15 @@ Pengujian desktop environment IceWM dilakukan untuk mengevaluasi performa, pengg
 
 > bukti saat pemakaian
 
+| Desktop Environment | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | UX |
+|---------------------|----------|----------|---------------|---------------|----|
+| IceWM 4.0.0 | 2,9% | 418M | 36–90% | 1,14G | Tampilan default sangat sederhana dengan taskbar di bawah dan mendukung dark mode. Navigasi menu sedikit sulit bagi pengguna baru meski pengaturan sistem cukup lengkap. Respons mouse dan keyboard baik dengan animasi halus, serta performa stabil, namun tampilan terasa tua dan ada sedikit delay saat scroll YouTube. | 
+
+Pada IceWM 4.0.0, penggunaan CPU pada kondisi idle berada di angka 2,9% dengan konsumsi RAM 418 MB, sedangkan saat pemakaian CPU tercatat pada kisaran 36–90% dengan penggunaan RAM mencapai 1,14 GB; dari sisi pengalaman pengguna, tampilan default dinilai sangat sederhana dengan taskbar di bagian bawah serta telah mendukung dark mode, navigasi menu dirasakan sedikit sulit bagi pengguna baru meskipun pengaturan sistem tergolong cukup lengkap, respons mouse dan keyboard berjalan baik dengan animasi halus dan performa yang stabil, namun tampilan masih terasa tua serta ditemukan sedikit delay saat melakukan scroll pada YouTube.
+
 #### 4.2.2.7. lxqt
 
 Pengujian desktop environment LXQt dilakukan untuk menilai efisiensi penggunaan resource, performa, dan pengalaman pengguna, serta mengevaluasi kelayakannya sebagai antarmuka modern yang ringan dan responsif untuk sistem operasi berbasis GLAM yang dikembangkan.
-
-| Desktop Environment | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | UX |
-|---------------------|----------|----------|---------------|---------------|----|
-| LXQt 2.3 | 3,9% | 543M | 50–90% | 1,13G | Tampilan default terkesan kuno namun mendukung dark mode. Navigasi menu mudah dan pengaturan sistem lengkap sehingga ramah untuk pemula. Respons mouse dan keyboard baik dengan animasi halus, performa multitasking stabil, namun ada delay saat membuka aplikasi dan scroll YouTube, serta tap touchpad tidak berfungsi. |
 
 <img width="1886" height="979" alt="image" src="https://github.com/user-attachments/assets/eb434311-09d0-462b-8bfa-99ea4a8e95d0" />
 
@@ -459,6 +489,12 @@ Pengujian desktop environment LXQt dilakukan untuk menilai efisiensi penggunaan 
 <img width="1886" height="979" alt="image" src="https://github.com/user-attachments/assets/3101e88c-20b0-427e-95b4-e62633402681" />
 
 > bukti saat pemakaian
+
+| Desktop Environment | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | UX |
+|---------------------|----------|----------|---------------|---------------|----|
+| LXQt 2.3 | 3,9% | 543M | 50–90% | 1,13G | Tampilan default terkesan kuno namun mendukung dark mode. Navigasi menu mudah dan pengaturan sistem lengkap sehingga ramah untuk pemula. Respons mouse dan keyboard baik dengan animasi halus, performa multitasking stabil, namun ada delay saat membuka aplikasi dan scroll YouTube, serta tap touchpad tidak berfungsi. |
+
+Pada LXQt 2.3, penggunaan CPU pada kondisi idle tercatat sebesar 3,9% dengan konsumsi RAM 543 MB, sedangkan saat pemakaian CPU berada pada kisaran 50–90% dengan penggunaan RAM mencapai 1,13 GB; dari sisi pengalaman pengguna, tampilan default dinilai terkesan kuno namun telah mendukung dark mode, navigasi menu dinilai mudah dengan pengaturan sistem yang lengkap sehingga relatif ramah bagi pemula, respons mouse dan keyboard berjalan baik dengan animasi halus serta performa multitasking yang stabil, namun masih ditemukan delay saat membuka aplikasi dan melakukan scroll pada YouTube, serta fitur tap touchpad tidak berfungsi.
 
 Tabel berikut menyajikan hasil pengujian instalasi berbagai desktop environment pada sistem operasi yang dikembangkan, mencakup versi, sumber paket, serta status keberhasilan instalasi sebagai dasar evaluasi antarmuka dan performa sistem.
 
@@ -653,9 +689,11 @@ Tabel ini menunjukkan hasil pengujian browser pada sistem operasi yang dikembang
 
 ---
 
-# 5. Conclusion
+# 5. Kesimpulan
 
 - Berdasarkan data sampel spesifikasi yang dikumpulkan maka dapat disimpulkan spesifikasi komputer berada pada level low sampai dengan mid end
 - Rekomendasi kernel untuk sistem operasi berbasis GLAM adalah linux-zen, linux-vfio dan linux-vfio-lts
 - Rekomendasi desktop environment untuk sistem operasi berbasis GLAM adalah Gnome dan Openbox
 - Rekomendasi browser untuk sistem operasi berbasis GLAM adalah Firefox dan Epiphany
+
+# 6. Referensi
