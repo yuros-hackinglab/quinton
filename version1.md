@@ -51,11 +51,11 @@ Adapun aplikasi yang kami gunakan untuk membantu melakukan riset sebagai berikut
 | ------ | -------- | -------- | ------------- | ------------- | ------------ |
 | vfio    | 26,9%    | 354M     | 66,2–87,3%    | 1,4G          | 37 detik     |
 
-<img src="img/linux-vfio-idle.png" width="800">
+<img src="data/image/linux-vfio-idle.png" width="800">
 
 > Berikut hasil testing kernel pada saat tidak menjalankan aplikasi
 
-<img src="img/linux-vfio-pemakaian.png" width="800">
+<img src="data/image/linux-vfio-pemakaian.png" width="800">
 
 > Di atas adalah hasil testing ketika membuka aplikasi youtube dan slims
 
@@ -65,11 +65,11 @@ Adapun aplikasi yang kami gunakan untuk membantu melakukan riset sebagai berikut
 | ------ | -------- | -------- | ------------- | ------------- | ------------ |
 | git    | 1-2,6%    | 576M     | 66,2–99,1%    | 1,08G         | 13 detik     |
 
-<img src="img/linux-git-idle.png" width="800">
+<img src="data/image/linux-git-idle.png" width="800">
 
 > Berikut hasil testing kernel pada saat tidak menjalankan aplikasi
 
-<img src="img/linux-git-using.png" width="800">
+<img src="data/image/linux-git-using.png" width="800">
 
 > Di atas adalah hasil testing ketika membuka aplikasi youtube dan slims
 
@@ -79,11 +79,11 @@ Adapun aplikasi yang kami gunakan untuk membantu melakukan riset sebagai berikut
 | ------ | -------- | -------- | ------------- | ------------- | ------------ |
 | lqx    | 1,9%     | 661M     | 36-89%        | 1,23G         | 30 detik     |
 
-<img src="img/linux-lqx-idle.png" width="800">
+<img src="data/image/linux-lqx-idle.png" width="800">
 
 > Berikut hasil testing kernel pada saat tidak menjalankan aplikasi
 
-<img src="img/linux-lqx-using.png" width="800">
+<img src="data/image/linux-lqx-using.png" width="800">
 
 > Di atas adalah hasil testing ketika membuka aplikasi youtube dan slims
 
@@ -93,11 +93,11 @@ Adapun aplikasi yang kami gunakan untuk membantu melakukan riset sebagai berikut
 | ------ | -------- | -------- | ------------- | ------------- | ------------ |
 | lts61  | 2,2-3,8% | 600M     | 24-94%        | 1,21G         | 22 detik     |
 
-<img src="img/linux-lts61-idle.png" width="800">
+<img src="data/image/linux-lts61-idle.png" width="800">
 
 > Berikut hasil testing kernel pada saat tidak menjalankan aplikasi
 
-<img src="img/linux-lts61-using.png" width="800">
+<img src="data/image/linux-lts61-using.png" width="800">
 
 > Di atas adalah hasil testing ketika membuka aplikasi youtube dan slims
 
@@ -107,11 +107,11 @@ Adapun aplikasi yang kami gunakan untuk membantu melakukan riset sebagai berikut
 | ------ | -------- | -------- | ------------- | ------------- | ------------ |
 | lts66  | 1,9%     | 630M     | 39,8-96%      | 1,11G         | 24 detik     |
 
-<img src="img/linux-lts66-idle.png" width="800">
+<img src="data/image/linux-lts66-idle.png" width="800">
 
 > Berikut hasil testing kernel pada saat tidak menjalankan aplikasi
 
-<img src="img/linux-lts66-using.png" width="800">
+<img src="data/image/linux-lts66-using.png" width="800">
 
 > Di atas adalah hasil testing ketika membuka aplikasi youtube dan slims
 
@@ -121,11 +121,11 @@ Adapun aplikasi yang kami gunakan untuk membantu melakukan riset sebagai berikut
 | ------   | -------- | -------- | ------------- | ------------- | ------------ |
 | mainline | 1,9%     | 360M     | 36-86%        | 971G          | 35 detik     |
 
-<img src="img/linux-mainline-idle.png" width="800">
+<img src="data/image/linux-mainline-idle.png" width="800">
 
 > Berikut hasil testing kernel pada saat tidak menjalankan aplikasi
 
-<img src="img/linux-mainline-using.png" width="800">
+<img src="data/image/linux-mainline-using.png" width="800">
 
 > Di atas adalah hasil testing ketika membuka aplikasi youtube dan slims
 
@@ -135,11 +135,11 @@ Adapun aplikasi yang kami gunakan untuk membantu melakukan riset sebagai berikut
 | ------ | -------- | -------- | ------------- | ------------- | ------------ |
 | rt     | 5,4%     | 538M     | 43,8%         | 1,18G         | 12 detik     |
 
-<img src="img/linux-rt-idle.png" width="800">
+<img src="data/image/linux-rt-idle.png" width="800">
 
 > Berikut hasil testing kernel pada saat tidak menjalankan aplikasi
 
-<img src="img/linux-rt-using.png" width="800">
+<img src="data/image/linux-rt-using.png" width="800">
 
 > Di atas adalah hasil testing ketika membuka aplikasi youtube dan slims
 
@@ -149,11 +149,11 @@ Adapun aplikasi yang kami gunakan untuk membantu melakukan riset sebagai berikut
 | ------ | -------- | -------- | ------------- | ------------- | ------------ |
 | rt-lts | 1,9%     | 435M     | 50-94%        | 1,14G         | 21 detik     |
 
-<img src="img/linux-rt-lts-idle.png" width="800">
+<img src="data/image/linux-rt-lts-idle.png" width="800">
 
 > Berikut hasil testing kernel pada saat tidak menjalankan aplikasi
 
-<img src="img/linux-rt-lts-using.png" width="800">
+<img src="data/image/linux-rt-lts-using.png" width="800">
 
 > Di atas adalah hasil testing ketika membuka aplikasi youtube dan slims
 
@@ -163,11 +163,11 @@ Adapun aplikasi yang kami gunakan untuk membantu melakukan riset sebagai berikut
 | ------ | -------- | -------- | ------------- | ------------- | ------------ |
 | tachyon| 1,6%     | 323M     | 36,8-90,1%    | 1,4G         | 35 detik     |
 
-<img src="img/linux-tachyon-idle.png" width="800">
+<img src="data/image/linux-tachyon-idle.png" width="800">
 
 > Berikut hasil testing kernel pada saat tidak menjalankan aplikasi
 
-<img src="img/linux-tachyon-using.png" width="800">
+<img src="data/image/linux-tachyon-using.png" width="800">
 
 > Di atas adalah hasil testing ketika membuka aplikasi youtube dan slims
 
@@ -177,11 +177,11 @@ Adapun aplikasi yang kami gunakan untuk membantu melakukan riset sebagai berikut
 | ------ | -------- | -------- | ------------- | ------------- | ------------ |
 | vfio-lts| 2%       | 565M     | 40-90%        | 1,03G         | 21 detik     |
 
-<img src="img/linux-vfio-lts-idle.png" width="800">
+<img src="data/image/linux-vfio-lts-idle.png" width="800">
 
 > Berikut hasil testing kernel pada saat tidak menjalankan aplikasi
 
-<img src="img/linux-vfio-lts-using.png" width="800">
+<img src="data/image/linux-vfio-lts-using.png" width="800">
 
 > Di atas adalah hasil testing ketika membuka aplikasi youtube dan slims
 
@@ -191,11 +191,11 @@ Adapun aplikasi yang kami gunakan untuk membantu melakukan riset sebagai berikut
 | ------ | -------- | -------- | ------------- | ------------- | ------------ |
 | zen    | 5,4%     | 538M     | 41,7%         | 1,18G         | 12 detik     |
 
-<img src="img/linux-zen-idle.png" width="800">
+<img src="data/image/linux-zen-idle.png" width="800">
 
 > Berikut hasil testing kernel pada saat tidak menjalankan aplikasi
 
-<img src="img/linux-zen-using.png" width="800">
+<img src="data/image/linux-zen-using.png" width="800">
 
 > Di atas adalah hasil testing ketika membuka aplikasi youtube dan slims
 
