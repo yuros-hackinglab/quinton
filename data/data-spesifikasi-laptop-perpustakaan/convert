@@ -1,0 +1,42 @@
+#!/bin/env bash
+## HELPER SCRIPT
+## Develop al muhdil karim <null@yuros.org>
+## contributor Haydar <kamil@yuros.org>
+
+#listdir=($( ls -a | sort )sort
+
+
+for i in *; do 
+
+    oldest=$i
+    rename=$( echo "${i,,}"  | tr -d '[]' )
+    rename=$( echo "$rename" | tr -s ' ' )
+    rename=$( echo "${rename}" | tr ' ' '-' )
+    rename=$( echo "${rename}" | tr -s '--' '-' )
+    
+
+    if [[ ! -d $(pwd)/$rename ]];then
+	mv "$(pwd)/$oldest" $(pwd)/$rename
+    fi
+
+done;
+
+
+listdir=($( ls -a | sort ))
+
+for x in */*; do
+
+    oldest=$x	
+    rename=$( echo "${x,,}"    | tr -d '[]' )
+    rename=$( echo "$rename"   | tr -s ' ')
+    rename=$( echo "${rename}" | tr '_' '-' )
+    rename=$( echo "${rename}" | tr ' ' '-' )
+ 
+    if [[ ! -f $(pwd)/$rename ]];then
+	
+	mv "$(pwd)/$oldest" $(pwd)/$rename
+    fi
+	#ls $(pwd)/$files
+
+done
+
