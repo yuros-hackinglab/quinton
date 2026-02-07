@@ -123,6 +123,13 @@ Pendekatan ini dilakukan agar hasil riset mencerminkan kondisi nyata di lapangan
 
 ## Result
 
+### kernel
+Dari total 19 kernel yang ditesting, terdapat 5 kernel yang dikategorikan sebagai gagal yaitu kernel nitrous, lts515, lts510, xanmod dan xanmod-rt sementara sisanya berhasil terinstall.
+
+Dari 14 total kernel yang sudah terinstall, kernel vfio-lts yang dinilai paling stabil dan yang menjadi pilihan berdasarkan hasil riset melalui CPU Average, penggunaan ram dan peforma ketika membuka beberapa aplikasi seperti youtube dan slims. Hasil riset menunjukan bahwa CPU usage idle dari kernel vfio-lts berada di angka 2$, sementara untuk penggunaan berada di range 40-90%. Kemudian untuk penggunaan ram nya, vfio-lts memakan ram sebesar 565MB untuk idle nya dan 1,03GB untuk pemakaiannya
+
+*riset menggunakan software htop*
+
 Hasil riset menunjukkan perbedaan yang signifikan pada aspek performa, stabilitas, dan pengalaman pengguna berdasarkan skenario pengujian yang diterapkan. Data yang diperoleh memperlihatkan pola penggunaan sumber daya yang konsisten pada kondisi tertentu, serta peningkatan atau penurunan performa ketika sistem berada di bawah beban.
 
 Dari sisi stabilitas, beberapa skenario berjalan tanpa kendala berarti, sementara skenario lain memunculkan error yang berulang. Temuan ini menjadi indikator penting dalam menilai tingkat keandalan objek yang diteliti. Sementara itu, hasil evaluasi user experience menunjukkan bahwa performa teknis tidak selalu berbanding lurus dengan kenyamanan penggunaan.
