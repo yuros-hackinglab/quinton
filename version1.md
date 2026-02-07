@@ -129,7 +129,7 @@ Tabel berikut menyajikan berbagai browser web beserta sumber paket dan status in
 | Netsurf  | [link](https://archlinux.org/packages/extra/x86_64/netsurf/)  |
 | Epiphany | [link](https://archlinux.org/packages/extra/x86_64/epiphany/) |
 
-Tabel ini menunjukkan hasil pengujian instalasi beberapa browser pada sistem operasi yang dikembangkan. Mayoritas browser seperti Firefox, Dillo, Luakit, Netsurf, dan Epiphany berhasil diinstal dengan baik, menandakan kompatibilitas yang baik dengan sistem. Sementara itu, Midori gagal pada tahap makepkg, menunjukkan adanya kendala pada proses kompilasi atau dependensi. Hasil ini menjadi dasar untuk memilih browser yang stabil dan siap digunakan dalam sistem operasi.
+Tabel ini menampilkan daftar browser yang diuji untuk sistem operasi yang dikembangkan beserta sumber paketnya. Browser yang dipilih mencakup opsi populer dan ringan, mulai dari Firefox yang kaya fitur, hingga Dillo, Luakit, Netsurf, dan Epiphany yang lebih ringan. Informasi sumber paket memudahkan instalasi dan pengujian, sekaligus menjadi dasar untuk mengevaluasi kompatibilitas, performa, dan stabilitas masing-masing browser pada sistem operasi.
 
 ## 4.2. Pelaksanaan Eksperimen
 
