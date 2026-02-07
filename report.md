@@ -199,6 +199,99 @@ Adapun aplikasi yang kami gunakan untuk membantu melakukan riset sebagai berikut
 
 > Di atas adalah hasil testing ketika membuka aplikasi youtube dan slims
 
+### Desktop Enviroment
+
+#### fluxbox 1.2.7
+| Desktop Environment | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | UX |
+|---------------------|----------|----------|---------------|---------------|----|
+| Fluxbox 1.3.7 | 2,6% | 309M | 3,6–49,7% | 887M | Tampilan minimalis dan cenderung kaku; tidak ada dark mode bawaan. Navigasi menu cukup sulit bagi pemula karena berbasis klik kanan tanpa panel modern. Respons mouse dan keyboard baik, sistem terasa ringan dan cepat, namun fitur visual terbatas serta tidak ada dock bawaan. |
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/0a3e873c-d589-4686-bf6a-425e856393af" />
+
+> bukti saat idle
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/2e276cc5-5a57-498e-93a5-a885d7dd54c9" />
+
+> bukti saat pemakaian
+  
+#### Openbox 3.6.1
+| Desktop Environment | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | UX |
+|---------------------|----------|----------|---------------|---------------|----|
+| Openbox 3.6.1 | 1% | 394M | 40–67% | 1,02G | Tampilan sangat minimalis (default hanya layar hitam) dengan dark mode. Navigasi menu sulit dan pengaturan sistem harus dipasang manual, sehingga tidak ramah pemula. Respons workspace cepat dan animasi halus, namun touchpad untuk klik tidak berfungsi serta tampilan kurang user-friendly tanpa konfigurasi tambahan. |
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/ccd144e0-63b3-4b50-b6cf-a135e6ff814b" />
+
+> bukti saat idle
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/d98d7006-957b-4ffa-b08e-44d8cc0a2003" />
+
+> bukti saat pemakaian
+
+#### lxde 
+| Desktop Environment | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | UX |
+|---------------------|----------|----------|---------------|---------------|----|
+| LXDE 1508 | 2,3% | 482M | 30–60% | 1020M | Tampilan klasik dengan dark mode dan navigasi menu yang mudah, sehingga ramah untuk pemula. Pengaturan sistem cukup lengkap meski tersebar di banyak bagian. Respons mouse dan keyboard baik, switching workspace lancar, namun animasi kurang halus dan ada jeda saat membuka aplikasi serta lag saat scroll YouTube. |
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/16443ce9-0a6f-491b-8116-0b7560a45bf1" />
+
+> bukti saat idle
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/b093f400-7486-45b2-b72c-b9e1c9927e35" />
+
+> bukti saat pemakaian
+
+#### mate
+| Desktop Environment | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | UX |
+|---------------------|----------|----------|---------------|---------------|----|
+| MATE 1.28.2 | 1,9% | 558M | 82,2–98% | 1,11G | Tampilan default terkesan kuno namun mendukung dark mode. Navigasi menu mudah dan pengaturan sistem lengkap, sehingga ramah untuk pemula. Respons mouse dan keyboard baik dengan animasi halus, tetapi terdapat delay saat membuka halaman baru, berpindah tab, dan scroll YouTube. |
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/3eefd623-b037-4d55-9554-82e2d8cfaadd" />
+
+> bukti saat idle
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/65f5a92f-76a4-4794-adbf-85a628137f25" />
+
+> bukti saat pemakaian
+
+#### XFCE
+| Desktop Environment | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | UX |
+|---------------------|----------|----------|---------------|---------------|----|
+| XFCE 4.20 | 2% | 565M | 40–90% | 1,03G | Tampilan default terkesan kuno namun mendukung dark mode. Navigasi menu mudah dan pengaturan sistem lengkap, sehingga ramah untuk pemula. Respons mouse dan keyboard baik dengan animasi halus, serta stabil untuk penggunaan harian, meskipun ada sedikit lag saat membuka halaman baru dan scroll YouTube. |
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/6927ec12-735e-404d-9903-60d731c336d5" />
+
+> bukti saat idle
+
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/5c349f57-cf2f-4b76-a29b-8a64805b81a1" />
+
+> bukti saat pemakaian
+
+#### icewm
+| Desktop Environment | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | UX |
+|---------------------|----------|----------|---------------|---------------|----|
+| IceWM 4.0.0 | 2,9% | 418M | 36–90% | 1,14G | Tampilan default sangat sederhana dengan taskbar di bawah dan mendukung dark mode. Navigasi menu sedikit sulit bagi pengguna baru meski pengaturan sistem cukup lengkap. Respons mouse dan keyboard baik dengan animasi halus, serta performa stabil, namun tampilan terasa tua dan ada sedikit delay saat scroll YouTube. | 
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/92925252-5d5e-4848-8fe7-c3fef5c43d91" />
+
+> bukti saat idle
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/c0665344-67cf-4536-958b-3efbb34c88b0" />
+
+> bukti saat pemakaian
+
+#### lxqt
+| Desktop Environment | CPU Idle | RAM Idle | CPU Pemakaian | RAM Pemakaian | UX |
+|---------------------|----------|----------|---------------|---------------|----|
+| LXQt 2.3 | 3,9% | 543M | 50–90% | 1,13G | Tampilan default terkesan kuno namun mendukung dark mode. Navigasi menu mudah dan pengaturan sistem lengkap sehingga ramah untuk pemula. Respons mouse dan keyboard baik dengan animasi halus, performa multitasking stabil, namun ada delay saat membuka aplikasi dan scroll YouTube, serta tap touchpad tidak berfungsi. |
+
+<img width="1886" height="979" alt="image" src="https://github.com/user-attachments/assets/eb434311-09d0-462b-8bfa-99ea4a8e95d0" />
+
+> bukti saat idle
+
+<img width="1886" height="979" alt="image" src="https://github.com/user-attachments/assets/3101e88c-20b0-427e-95b4-e62633402681" />
+
+> bukti saat pemakaian
+
 ## Conclusion
 
 Berdasarkan hasil riset, dapat disimpulkan bahwa kernel dan desktop environment yang kami pilih berdasarkan hasil sistem ranking 
