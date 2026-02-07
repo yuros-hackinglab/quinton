@@ -133,11 +133,11 @@ Tabel ini menunjukkan hasil pengujian instalasi beberapa browser pada sistem ope
 
 ## 4.2. Pelaksanaan Eksperimen
 
-Bagian ini menjelaskan tahapan pelaksanaan eksperimen yang dilakukan selama penelitian, termasuk proses pengujian, konfigurasi, serta evaluasi komponen sistem yang digunakan dalam pengembangan sistem operasi.
+Pada bagian ini akan melakukan pengujian kernel, desktop environment, dan browser yang akan diterapkan pada sistem operasis berbasis GLAM.
 
 ### 4.2.1. Kernel
 
-Subbab ini membahas proses pengujian kernel sebagai komponen inti sistem operasi, dengan fokus pada stabilitas, kompatibilitas perangkat keras, dan keberhasilan instalasi serta booting sistem.
+Pengujian kernel dilihat dari lima instrumen yaitu CPU idle, RAM idle, CPU pemakaian, RAM pemakaian, dan load firefox. 
 
 #### 4.2.1.1. kernel vfio
 
@@ -476,11 +476,11 @@ Tabel ini menunjukkan bahwa semua desktop environment yang diuji — MATE, Fluxb
 
 ---
 
-## 4.3. Browser
+### 4.2.3. Browser
 
 Subbab ini menyajikan hasil pengujian berbagai browser web pada sistem operasi yang dikembangkan, meliputi performa, penggunaan resource, stabilitas, dan pengalaman pengguna, sebagai dasar pemilihan browser yang paling optimal untuk lingkungan sistem operasi berbasis GLAM.
 
-### 4.3.1. falcon
+#### 4.2.3.1. falcon
 
 Pengujian browser Falcon dilakukan untuk menilai performa, stabilitas, dan pengalaman pengguna (UX) sebagai kandidat browser pada sistem operasi yang dikembangkan. Pengujian performa dilakukan pada dua kondisi, yaitu saat idle (browser terbuka tanpa tab aktif) dan saat digunakan (beberapa tab aktif seperti SLiMS, Canva, dan YouTube).
 
@@ -520,7 +520,7 @@ Secara keseluruhan, Falcon cukup mudah digunakan dan responsif, namun memiliki k
 
 ---
 
-### 4.3.2. dillo
+#### 4.2.3.2. dillo
 
 Pengujian browser Falcon dilakukan untuk menilai performa, stabilitas, dan pengalaman pengguna (UX) sebagai kandidat browser pada sistem operasi yang dikembangkan. Pengujian browser Dillo dilakukan untuk mengevaluasi efisiensi penggunaan resource, stabilitas, dan pengalaman pengguna (UX) dalam konteks pengembangan sistem operasi.
 
@@ -559,7 +559,7 @@ Secara keseluruhan, Dillo unggul dalam efisiensi resource, namun memiliki keterb
 
 ---
 
-### 4.3.3. firefox
+#### 4.2.3.3. firefox
 
 Pengujian browser Firefox dilakukan untuk menilai performa, stabilitas, dan pengalaman pengguna (UX) sebagai browser umum pada sistem operasi yang dikembangkan. Pengujian dilakukan pada kondisi idle (browser terbuka tanpa tab aktif) dan saat digunakan dengan beberapa tab aktif seperti SLiMS, Canva, dan YouTube.
 
@@ -585,8 +585,6 @@ Saat digunakan dengan beberapa tab aktif, Firefox menunjukkan peningkatan penggu
 
 > tampilan htop pemakaian resource saat sedang digunakan
 
-#### 4.3.3.2. Stabilitas
-
 | browser | crash | lag | memory leak |
 |---------|------|-------|------------|
 | firefox | no   | yes   | no         |
@@ -602,7 +600,7 @@ Secara keseluruhan, Firefox unggul pada aspek pengalaman pengguna dan stabilitas
 
 ---
 
-### 4.3.4. Epiphany
+#### 4.2.3.4. Epiphany
 
 Pengujian browser Epiphany dilakukan untuk menilai performa, stabilitas, dan pengalaman pengguna (UX) sebagai bagian dari evaluasi browser pada sistem operasi yang dikembangkan. Pengujian performa dilakukan pada kondisi idle dan saat digunakan dengan beberapa tab aktif seperti SLiMS, Canva, dan YouTube.
 
@@ -655,7 +653,7 @@ Tabel ini menunjukkan hasil pengujian browser pada sistem operasi yang dikembang
 
 ---
 
-## Conclusion
+# 5. Conclusion
 
 - Berdasarkan data sampel spesifikasi yang dikumpulkan maka dapat disimpulkan spesifikasi komputer berada pada level low sampai dengan mid end
 - Rekomendasi kernel untuk sistem operasi berbasis GLAM adalah linux-zen, linux-vfio dan linux-vfio-lts
