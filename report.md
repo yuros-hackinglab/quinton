@@ -152,6 +152,11 @@ Pendekatan ini dilakukan agar hasil riset mencerminkan kondisi nyata di lapangan
 ## Result
 
 ### Kernel
+Dari total 19 kernel yang ditesting, terdapat 5 kernel yang dikategorikan sebagai gagal yaitu kernel nitrous, lts515, lts510, xanmod dan xanmod-rt sementara sisanya berhasil terinstall.
+
+Dari 14 total kernel yang sudah terinstall, kernel vfio-lts yang dinilai paling stabil dan yang menjadi pilihan berdasarkan hasil riset melalui CPU Average, penggunaan ram dan peforma ketika membuka beberapa aplikasi seperti youtube dan slims. Hasil riset menunjukan bahwa CPU usage idle dari kernel vfio-lts berada di angka 2$, sementara untuk penggunaan berada di range 40-90%. Kemudian untuk penggunaan ram nya, vfio-lts memakan ram sebesar 565MB untuk idle nya dan 1,03GB untuk pemakaiannya
+
+*riset menggunakan software htop*
 
 | Kernel       | Firefox   | CPU        | RAM       | Delay                                                                                                                                               | Hang                                                              |
 | ------------ | --------- | ---------- | --------- | --------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
