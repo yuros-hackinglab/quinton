@@ -108,8 +108,36 @@ Di bawah ini adalah hasil testing ketika membuka aplikasi youtube dan slims
 <img src="img/linux-zen-using.png" width="800">
 
 ### desktop environment
+untuk riset desktop enviroment team memilih enam kandidat desktop enviroment, kandidat itu diambil dari pertimbangan keringan desktop envoroment tersebut. keenam dari Destop enviroment tersebut diantarnya xfce, lxqt, openbox, fluxbox, mate, dan lxde 
+#### lxqt
+ | CPU Usage (Saat Pemakaian) | User Experience (UX) |
+ |----------------------------|----------------------|
+| 50–90%                     | **Tampilan & Desain:**<br>- Kesan visual kuno (default)<br>- Dark mode tersedia<br><br>**Kemudahan Penggunaan:**<br>- Navigasi menu mudah<br>- Pengaturan sistem lengkap<br>- Cocok untuk pemula<br><br>**Responsivitas:**<br>- Mouse & keyboard baik<br>- Animasi UI halus<br><br>**Catatan UX:**<br>- Delay buka aplikasi ±7 detik<br>- Multitasking lancar (5 tab, 6 aplikasi)<br>- Touchpad tap tidak berfungsi|
 
+#### XFCE
+| CPU Usage (Saat Pemakaian) | User Experience (UX) |
+ |----------------------------|----------------------|
+| 3.6–49.7%                     | **Tampilan & Desain:**<br>- Kesan visual: kuno (default)<br>- Dark mode tersedia<br><br>**Kemudahan Penggunaan:**<br>- Navigasi menu mudah<br>- Pengaturan sistem lengkap<br>- Cocok untuk pemula<br><br>**Responsivitas:**<br>- Respons mouse & keyboard baik<br>- Animasi UI halus<br><br>**Catatan UX:**<br>- Sedikit lag saat membuka halaman web berat<br>- Scroll YouTube terasa delay |
 
+ #### Fluxbox
+ | CPU Usage (Saat Pemakaian) | User Experience (UX) |
+ |----------------------------|----------------------|
+|  3.6–49.7%                  | **Tampilan & Desain:**<br>- Kesan visual kaku<br>- Tidak ada dark mode<br><br>**Kemudahan Penggunaan:**<br>- Navigasi menu sulit<br>- Pengaturan sistem minim<br>- Tidak cocok untuk pemula<br><br>**Responsivitas:**<br>- Respons mouse & keyboard baik<br>- Animasi UI halus<br><br>**Catatan UX:**<br>- Sangat ringan<br>- Tidak ada dock bawaan<br>- Akses menu kurang intuitif |
+
+#### LXDE
+| CPU Usage (Saat Pemakaian) | User Experience (UX) |
+ |----------------------------|----------------------|
+| 30–60%                     | **Tampilan & Desain:**<br>- Kesan visual klasik<br>- Konsistensi tema cukup<br>- Dark mode tersedia<br><br>**Kemudahan Penggunaan:**<br>- Navigasi menu mudah<br>- Pengaturan sistem lengkap namun terpisah<br>- Cocok untuk pemula<br><br>**Responsivitas:**<br>- Mouse & keyboard responsif<br>- Animasi UI sedang (kurang halus)<br><br>**Catatan UX:**<br>- Ada jeda saat membuka aplikasi<br>- Scroll YouTube masih lag<br>- Perlu perbaikan untuk penggunaan harian |
+
+#### Openbox
+| CPU Usage (Saat Pemakaian) | User Experience (UX) |
+ |----------------------------|----------------------|
+| 40-67%                    | **Tampilan & Desain:**<br>- osong hanya hitam<br>- Konsistensi tema cukup<br>- Dark mode tersedia<br><br>**Kemudahan Penggunaan:**<br>- Navigasi menu sulitbr>- Pengaturan sistem harus di install manual <br>- Tidak cocok untuk pemula <br><br>**Responsivitas**<br>- Mouse & keyboard responsif<br>- Animasi UI halus (kurang halus)<br><br>**Catatan UX:**<br>- stabil ( di page youtube home delay tidak terlalu parah)<br>- tampilan tidak user friendly<br>- tidak support rounded |
+
+#### Mate
+| CPU Usage (Saat Pemakaian) | User Experience (UX) |
+ |----------------------------|----------------------|
+|82,2-98%| **Tampilan & Desain:**<br>- Kesan visual: kuno (default) m<br>- Konsistensi tema cukup<br>- Dark mode tersedia<br><br>**Kemudahan Penggunaan:**<br>- Navigasi menu mudah br>- Pengaturan sistem lengkap <br>- cocok untuk pemula <br><br>**Responsivitas**<br>- Mouse & keyboard responsif<br>- Animasi UI halus (kurang halus)<br><br>**Catatan UX:**<br>- tampilan mudah di mengerti untuk pemula karena mirip dengan di windows<br>- butuh update tampilan karna tampilan lumayan tua, delay saat scrol yutub<br>- delay saat gonta-ganti tab dan agak sedikit ngelag |
 
 ### browser
 
