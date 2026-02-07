@@ -27,7 +27,7 @@ Adapun aplikasi yang kami gunakan untuk membantu melakukan riset sebagai berikut
 
 # 3. Metode
 
-Dalam riset ini tim menjalankan dua fase riset. Pada riset fase pertama, tim melakukan riset dokumen untuk mengumpulkan data-data yang memungkinkan akan digunakan untuk sistem operasi berbasis GLAM. Setelah fase pertama selesai, tim melaksanakan fase pelaksanaan eksperimen. 
+Dalam riset ini tim menjalankan dua fase riset. Pada riset fase pertama, tim melakukan riset dokumen untuk mengumpulkan data-data yang memungkinkan akan digunakan untuk sistem operasi untuk GLAM. Setelah fase pertama selesai, tim melaksanakan fase pelaksanaan eksperimen. 
 
 ## 3.1. Riset Dokumen dan Survey
 
@@ -53,7 +53,7 @@ Bab ini menyajikan hasil dari seluruh rangkaian pengujian dan riset yang telah d
 
 ## 4.1. Riset Dokumen dan Survey
 
-Tabel berikut menampilkan hasil riset spesifikasi perangkat komputer di berbagai sekolah, perpustakaan, dan institusi pendidikan yang digunakan sebagai dasar analisis kebutuhan serta kompatibilitas dalam prototyping sistem operasi berbasis GLAM.
+Tabel berikut menampilkan hasil riset spesifikasi perangkat komputer di berbagai sekolah, perpustakaan, dan institusi pendidikan yang digunakan sebagai dasar analisis kebutuhan serta kompatibilitas dalam prototyping sistem operasi untuk GLAM.
 
 | Sekolah                        | Sistem Operasi        | Manufacture           | Model                                   | Processor                                                         | Memory  | Graphic                    | VRAM  |
 | ------------------------------ | --------------------- | --------------------- | --------------------------------------- | ----------------------------------------------------------------- | ------- | -------------------------- | ----- |
@@ -78,7 +78,7 @@ Tabel berikut menampilkan hasil riset spesifikasi perangkat komputer di berbagai
 
 Berdasarkan tabel tersebut data spesifikasi komputer yang digunakan di berbagai sekolah, perpustakaan, dan institusi pendidikan, dengan mayoritas perangkat menggunakan sistem operasi Windows 11 (Home dan Pro) serta sebagian komputer masih menggunakan Windows 10. Produsen yang paling banyak digunakan adalah Lenovo, ASUS, dan HP, didominasi oleh perangkat All-in-One PC. Spesifikasi hardware sangat bervariasi, mulai dari prosesor kelas entry-level seperti Intel Celeron dan AMD Athlon hingga Intel Core i3 dan i5 dari berbagai generasi, dengan kapasitas RAM berkisar antara 4 GB hingga 16 GB. Seluruh perangkat menggunakan grafis terintegrasi (Intel UHD, AMD Radeon, atau Microsoft Basic Display) dengan VRAM relatif kecil.
 
-Tabel berikut menyajikan berbagai varian kernel Linux beserta sumber paketnya, yang digunakan sebagai dasar pengujian stabilitas, performa, dan kompatibilitas prosesor kelas entry-level dalam pengembangan sistem operasi berbasis GLAM.
+Tabel berikut menyajikan berbagai varian kernel Linux beserta sumber paketnya, yang digunakan sebagai dasar pengujian stabilitas, performa, dan kompatibilitas prosesor kelas entry-level dalam pengembangan sistem operasi untuk GLAM.
 
 | Kernel          | Source                                                                      |
 | --------------- | --------------------------------------------------------------------------- |
@@ -102,9 +102,9 @@ Tabel berikut menyajikan berbagai varian kernel Linux beserta sumber paketnya, y
 | xanmod          | [link](https://aur.archlinux.org/linux-xanmod.git)                          |
 | xanmod-rt       | [link](https://gitlab.com/chaotic-aur/pkgbuilds/-/tree/main/linux-xanmod-rt)|
 
-Tabel ini menampilkan daftar berbagai varian kernel Linux yang diuji untuk pengembangan sistem operasi, mencakup kernel stabil (LTS), kernel real-time (RT), kernel optimasi performa (Zen, Tachyon, XFIO), hingga kernel dari repositori pengembangan terbaru (linux-git, tkg, xanmod). Informasi sumber paket disertakan untuk memudahkan akses dan instalasi. Data ini menunjukkan cakupan kernel yang luas, yang memungkinkan evaluasi menyeluruh terhadap stabilitas, kompatibilitas hardware, dan performa sistem operasi berbasis GLAM.
+Tabel ini menampilkan daftar berbagai varian kernel Linux yang diuji untuk pengembangan sistem operasi, mencakup kernel stabil (LTS), kernel real-time (RT), kernel optimasi performa (Zen, Tachyon, XFIO), hingga kernel dari repositori pengembangan terbaru (linux-git, tkg, xanmod). Informasi sumber paket disertakan untuk memudahkan akses dan instalasi. Data ini menunjukkan cakupan kernel yang luas, yang memungkinkan evaluasi menyeluruh terhadap stabilitas, kompatibilitas hardware, dan performa sistem operasi untuk GLAM.
 
-Tabel berikut menyajikan berbagai desktop environment beserta sumber paketnya, yang digunakan untuk pengujian antarmuka, performa, dan efisiensi penggunaan resource dalam pengembangan sistem operasi berbasis GLAM.
+Tabel berikut menyajikan berbagai desktop environment beserta sumber paketnya, yang digunakan untuk pengujian antarmuka, performa, dan efisiensi penggunaan resource dalam pengembangan sistem operasi untuk GLAM.
 
 | Desktop Enveroment   | Source                                                                    |
 | -------              | ------------------------------------------------------------------------- |
@@ -116,7 +116,7 @@ Tabel berikut menyajikan berbagai desktop environment beserta sumber paketnya, y
 | IceWM 4.0.0          | [link](https://archlinux.org/packages/extra/x86_64/icewm/)                |
 | LXQt 2.3             | [link](https://archlinux.org/packages/?sort=&q=LXQt+&maintainer=&flagged=) |
 
-Tabel ini menampilkan berbagai desktop environment yang diuji dalam pengembangan sistem operasi, mulai dari yang ringan seperti Fluxbox, Openbox, LXDE, dan IceWM, hingga yang lebih lengkap dan modern seperti MATE, XFCE, dan LXQt. Semua DE memiliki sumber paket yang jelas, memudahkan instalasi dan pengujian. Data ini menunjukkan bahwa setiap DE siap dievaluasi lebih lanjut dari sisi performa, penggunaan resource, dan pengalaman pengguna untuk menentukan antarmuka yang paling sesuai dengan kebutuhan sistem operasi berbasis GLAM.
+Tabel ini menampilkan berbagai desktop environment yang diuji dalam pengembangan sistem operasi, mulai dari yang ringan seperti Fluxbox, Openbox, LXDE, dan IceWM, hingga yang lebih lengkap dan modern seperti MATE, XFCE, dan LXQt. Semua DE memiliki sumber paket yang jelas, memudahkan instalasi dan pengujian. Data ini menunjukkan bahwa setiap DE siap dievaluasi lebih lanjut dari sisi performa, penggunaan resource, dan pengalaman pengguna untuk menentukan antarmuka yang paling sesuai dengan kebutuhan sistem operasi untuk GLAM.
 
 Tabel berikut menyajikan berbagai browser web beserta sumber paket dan status instalasinya, yang digunakan untuk mengevaluasi kompatibilitas, stabilitas, dan kesiapan aplikasi pada sistem operasi yang dikembangkan.
 
@@ -133,7 +133,7 @@ Tabel ini menampilkan daftar browser yang diuji untuk sistem operasi yang dikemb
 
 ## 4.2. Pelaksanaan Eksperimen
 
-Pada bagian ini akan melakukan pengujian kernel, desktop environment, dan browser yang akan diterapkan pada sistem operasis berbasis GLAM.
+Pada bagian ini akan melakukan pengujian kernel, desktop environment, dan browser yang akan diterapkan pada sistem operasis untuk GLAM.
 
 ### 4.2.1. Kernel
 
@@ -141,7 +141,7 @@ Pengujian kernel dilihat dari lima instrumen yaitu CPU idle, RAM idle, CPU pemak
 
 #### 4.2.1.1. kernel vfio
 
-Pengujian kernel VFIO dilakukan untuk mengevaluasi dukungan virtualisasi, stabilitas sistem, serta kelayakannya sebagai kernel yang digunakan dalam pengembangan dan pengujian sistem operasi berbasis GLAM.
+Pengujian kernel VFIO dilakukan untuk mengevaluasi dukungan virtualisasi, stabilitas sistem, serta kelayakannya sebagai kernel yang digunakan dalam pengembangan dan pengujian sistem operasi untuk GLAM.
 
 <img src="data/image/linux-vfio-idle.png" width="800">
 
@@ -159,7 +159,7 @@ Penggunaan resource pada kernel VFIO dicatat sedang; saat kondisi idle, CPU digu
 
 #### 4.2.1.2. kernel git
 
-Pengujian kernel Git dilakukan untuk mengevaluasi performa, stabilitas, dan kompatibilitas perangkat keras pada versi kernel yang dikembangkan langsung dari repositori sumber, guna menilai kelayakannya sebagai basis sistem operasi berbasis GLAM.
+Pengujian kernel Git dilakukan untuk mengevaluasi performa, stabilitas, dan kompatibilitas perangkat keras pada versi kernel yang dikembangkan langsung dari repositori sumber, guna menilai kelayakannya sebagai basis sistem operasi untuk GLAM.
 
 <img src="data/image/linux-git-idle.png" width="800">
 
@@ -195,7 +195,7 @@ Penggunaan resource pada kernel Lqx dicatat rendah saat kondisi idle, dengan CPU
 
 #### 4.2.1.4. kernel lts61
 
-Pengujian kernel LTS61 dilakukan untuk mengevaluasi stabilitas jangka panjang, penggunaan resource, dan kompatibilitas perangkat keras, sebagai bagian dari penilaian kelayakan kernel ini untuk pengembangan sistem operasi yang handal berbasis GLAM.
+Pengujian kernel LTS61 dilakukan untuk mengevaluasi stabilitas jangka panjang, penggunaan resource, dan kompatibilitas perangkat keras, sebagai bagian dari penilaian kelayakan kernel ini untuk pengembangan sistem operasi yang handal untuk GLAM.
 
 <img src="data/image/linux-lts61-idle.png" width="800">
 
@@ -213,7 +213,7 @@ Penggunaan resource pada kernel LTS61 dicatat rendah saat idle, dengan CPU 2,2�
 
 #### 4.2.1.5. kernel lts66
 
-Pengujian kernel LTS66 dilakukan untuk menilai performa, stabilitas, dan efisiensi penggunaan resource pada lingkungan sistem nyata, sekaligus mengevaluasi kelayakannya sebagai kernel jangka panjang untuk pengembangan sistem operasi berbasis GLAM.
+Pengujian kernel LTS66 dilakukan untuk menilai performa, stabilitas, dan efisiensi penggunaan resource pada lingkungan sistem nyata, sekaligus mengevaluasi kelayakannya sebagai kernel jangka panjang untuk pengembangan sistem operasi untuk GLAM.
 
 <img src="data/image/linux-lts66-idle.png" width="800">
 
@@ -249,7 +249,7 @@ Penggunaan resource pada kernel Mainline dicatat sangat rendah saat idle, dengan
 
 #### 4.2.1.7. kernel rt
 
-Pengujian kernel RT dilakukan untuk menilai kemampuan sistem dalam menangani proses real-time, termasuk stabilitas, responsivitas, dan penggunaan resource, sebagai bagian dari evaluasi kesesuaian kernel ini untuk aplikasi yang membutuhkan determinisme tinggi pada sistem operasi berbasis GLAM.
+Pengujian kernel RT dilakukan untuk menilai kemampuan sistem dalam menangani proses real-time, termasuk stabilitas, responsivitas, dan penggunaan resource, sebagai bagian dari evaluasi kesesuaian kernel ini untuk aplikasi yang membutuhkan determinisme tinggi pada sistem operasi untuk GLAM.
 
 <img src="data/image/linux-rt-idle.png" width="800">
 
@@ -267,7 +267,7 @@ Penggunaan resource pada kernel RT dicatat rendah hingga sedang saat idle, denga
 
 #### 4.2.1.8. kernel rt-lts
 
-Pengujian kernel RT-LTS dilakukan untuk mengevaluasi kinerja real-time dengan dukungan jangka panjang, menilai stabilitas, responsivitas, dan penggunaan resource, serta menilai kelayakannya sebagai kernel andal untuk aplikasi yang membutuhkan determinisme tinggi pada sistem operasi berbasis GLAM.
+Pengujian kernel RT-LTS dilakukan untuk mengevaluasi kinerja real-time dengan dukungan jangka panjang, menilai stabilitas, responsivitas, dan penggunaan resource, serta menilai kelayakannya sebagai kernel andal untuk aplikasi yang membutuhkan determinisme tinggi pada sistem operasi untuk GLAM.
 
 <img src="data/image/linux-rt-lts-idle.png" width="800">
 
@@ -285,7 +285,7 @@ Penggunaan resource pada kernel RT-LTS dicatat sangat rendah saat idle, dengan C
 
 #### 4.2.1.9. kernel tachyon
 
-Pengujian kernel Tachyon dilakukan untuk menilai performa tinggi dan optimasi sistem, termasuk stabilitas, efisiensi penggunaan resource, dan kompatibilitas perangkat keras, guna mengevaluasi kelayakannya sebagai kernel yang cepat dan responsif untuk pengembangan sistem operasi berbasis GLAM.
+Pengujian kernel Tachyon dilakukan untuk menilai performa tinggi dan optimasi sistem, termasuk stabilitas, efisiensi penggunaan resource, dan kompatibilitas perangkat keras, guna mengevaluasi kelayakannya sebagai kernel yang cepat dan responsif untuk pengembangan sistem operasi untuk GLAM.
 
 <img src="data/image/linux-tachyon-idle.png" width="800">
 
@@ -321,7 +321,7 @@ Penggunaan resource pada kernel VFIO-LTS dicatat rendah saat idle, dengan CPU 2%
 
 #### 4.2.1.11. kernel zen
 
-Pengujian kernel Zen dilakukan untuk menilai performa dan responsivitas sistem yang dioptimalkan, termasuk penggunaan resource, stabilitas, dan kompatibilitas perangkat keras, sebagai bagian dari evaluasi kernel yang cepat dan efisien untuk pengembangan sistem operasi berbasis GLAM.
+Pengujian kernel Zen dilakukan untuk menilai performa dan responsivitas sistem yang dioptimalkan, termasuk penggunaan resource, stabilitas, dan kompatibilitas perangkat keras, sebagai bagian dari evaluasi kernel yang cepat dan efisien untuk pengembangan sistem operasi untuk GLAM.
 
 <img src="data/image/linux-zen-idle.png" width="800">
 
@@ -337,7 +337,7 @@ Pengujian kernel Zen dilakukan untuk menilai performa dan responsivitas sistem y
 
 Pada kernel Zen, kondisi idle ditunjukkan dengan penggunaan CPU sebesar 5,4% dan RAM sebesar 538 MB. Saat sistem berada pada kondisi pemakaian, penggunaan CPU tercatat 41,7% dengan konsumsi RAM meningkat menjadi 1,18 GB. Waktu pemuatan (load) Firefox dicatat selama 12 detik, sehingga dapat disimpulkan bahwa kernel Zen memberikan respons aplikasi yang cepat dengan penggunaan sumber daya yang relatif stabil.
 
-Tabel berikut menyajikan hasil pengujian berbagai kernel Linux sebagai bagian dari proses analisis stabilitas, kompatibilitas perangkat keras, dan kelayakan kernel dalam pengembangan sistem operasi berbasis GLAM.
+Tabel berikut menyajikan hasil pengujian berbagai kernel Linux sebagai bagian dari proses analisis stabilitas, kompatibilitas perangkat keras, dan kelayakan kernel dalam pengembangan sistem operasi untuk GLAM.
 
 | Kernel   | Source                                                | Status                                  |
 | ------- | --------------------------------------------------------- | --------------------------------------------------------- |
@@ -368,7 +368,7 @@ Hasil pengujian stabilitas dan kompatibilitas berbagai kernel Linux, di mana seb
 
 ### 4.2.2. Desktop Enviroment
 
-Subbab ini membahas pengujian berbagai desktop environment (DE) untuk sistem operasi yang dikembangkan, dengan fokus pada efisiensi penggunaan resource, performa, stabilitas, dan pengalaman pengguna, guna menentukan antarmuka yang paling sesuai untuk kebutuhan sistem operasi berbasis GLAM.
+Subbab ini membahas pengujian berbagai desktop environment (DE) untuk sistem operasi yang dikembangkan, dengan fokus pada efisiensi penggunaan resource, performa, stabilitas, dan pengalaman pengguna, guna menentukan antarmuka yang paling sesuai untuk kebutuhan sistem operasi untuk GLAM.
 
 #### 4.2.2.1. fluxbox
 
@@ -408,7 +408,7 @@ Pada Openbox 3.6.1, penggunaan CPU saat idle tercatat sebesar 1% dengan konsumsi
 
 #### 4.2.2.3. lxde 
 
-Pengujian desktop environment LXDE dilakukan untuk menilai efisiensi penggunaan resource, performa sistem, dan pengalaman pengguna, serta mengevaluasi kelayakannya sebagai antarmuka ringan yang cocok untuk sistem operasi berbasis GLAM dengan spesifikasi terbatas.
+Pengujian desktop environment LXDE dilakukan untuk menilai efisiensi penggunaan resource, performa sistem, dan pengalaman pengguna, serta mengevaluasi kelayakannya sebagai antarmuka ringan yang cocok untuk sistem operasi untuk GLAM dengan spesifikasi terbatas.
 
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/16443ce9-0a6f-491b-8116-0b7560a45bf1" />
 
@@ -426,7 +426,7 @@ Pada LXDE 1508, penggunaan CPU saat idle berada pada kisaran 2,3% dengan konsums
 
 #### 4.2.2.4. mate
 
-Pengujian desktop environment MATE dilakukan untuk mengevaluasi performa, penggunaan resource, dan pengalaman pengguna, serta menilai kecocokannya sebagai antarmuka yang stabil dan fungsional pada sistem operasi berbasis GLAM yang dikembangkan.
+Pengujian desktop environment MATE dilakukan untuk mengevaluasi performa, penggunaan resource, dan pengalaman pengguna, serta menilai kecocokannya sebagai antarmuka yang stabil dan fungsional pada sistem operasi untuk GLAM yang dikembangkan.
 
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/3eefd623-b037-4d55-9554-82e2d8cfaadd" />
 
@@ -444,7 +444,7 @@ Pada MATE 1.28.2, penggunaan CPU saat kondisi idle tercatat sebesar 1,9% dengan 
 
 #### 4.2.2.5. XFCE
 
-Pengujian desktop environment XFCE dilakukan untuk menilai efisiensi penggunaan resource, performa, dan pengalaman pengguna, serta mengevaluasi kelayakannya sebagai antarmuka ringan dan stabil yang sesuai untuk sistem operasi berbasis GLAM dengan fokus pada kecepatan dan responsivitas.
+Pengujian desktop environment XFCE dilakukan untuk menilai efisiensi penggunaan resource, performa, dan pengalaman pengguna, serta mengevaluasi kelayakannya sebagai antarmuka ringan dan stabil yang sesuai untuk sistem operasi untuk GLAM dengan fokus pada kecepatan dan responsivitas.
 
 <img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/6927ec12-735e-404d-9903-60d731c336d5" />
 
@@ -462,7 +462,7 @@ Pada XFCE 4.20, penggunaan CPU pada kondisi idle tercatat sebesar 2% dengan kons
 
 #### 4.2.2.6. icewm
 
-Pengujian desktop environment IceWM dilakukan untuk mengevaluasi performa, penggunaan resource, dan pengalaman pengguna, serta menilai kelayakannya sebagai antarmuka ringan dan sederhana yang mendukung sistem operasi berbasis GLAM dengan spesifikasi terbatas.
+Pengujian desktop environment IceWM dilakukan untuk mengevaluasi performa, penggunaan resource, dan pengalaman pengguna, serta menilai kelayakannya sebagai antarmuka ringan dan sederhana yang mendukung sistem operasi untuk GLAM dengan spesifikasi terbatas.
 
 <img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/92925252-5d5e-4848-8fe7-c3fef5c43d91" />
 
@@ -480,7 +480,7 @@ Pada IceWM 4.0.0, penggunaan CPU pada kondisi idle berada di angka 2,9% dengan k
 
 #### 4.2.2.7. lxqt
 
-Pengujian desktop environment LXQt dilakukan untuk menilai efisiensi penggunaan resource, performa, dan pengalaman pengguna, serta mengevaluasi kelayakannya sebagai antarmuka modern yang ringan dan responsif untuk sistem operasi berbasis GLAM yang dikembangkan.
+Pengujian desktop environment LXQt dilakukan untuk menilai efisiensi penggunaan resource, performa, dan pengalaman pengguna, serta mengevaluasi kelayakannya sebagai antarmuka modern yang ringan dan responsif untuk sistem operasi untuk GLAM yang dikembangkan.
 
 <img width="1886" height="979" alt="image" src="https://github.com/user-attachments/assets/eb434311-09d0-462b-8bfa-99ea4a8e95d0" />
 
@@ -508,13 +508,13 @@ Tabel berikut menyajikan hasil pengujian instalasi berbagai desktop environment 
 | IceWM 4.0.0    | [link](https://archlinux.org/packages/extra/x86_64/icewm/)                    | Berhasil |
 | LXQt 2.3       | [link](https://archlinux.org/packages/?sort=&q=LXQt+&maintainer=&flagged=)    | Berhasil |
 
-Tabel ini menunjukkan bahwa semua desktop environment yang diuji — MATE, Fluxbox, Openbox, LXDE, XFCE, IceWM, dan LXQt — berhasil diinstal dengan baik. Hal ini menandakan bahwa versi-versi yang digunakan kompatibel dengan sistem operasi yang dikembangkan, dan siap untuk diuji lebih lanjut dari sisi performa, penggunaan resource, serta pengalaman pengguna. Dengan keberhasilan instalasi ini, setiap DE dapat dievaluasi untuk menentukan antarmuka yang paling ringan, responsif, dan sesuai kebutuhan target sistem operasi berbasis GLAM.
+Tabel ini menunjukkan bahwa semua desktop environment yang diuji — MATE, Fluxbox, Openbox, LXDE, XFCE, IceWM, dan LXQt — berhasil diinstal dengan baik. Hal ini menandakan bahwa versi-versi yang digunakan kompatibel dengan sistem operasi yang dikembangkan, dan siap untuk diuji lebih lanjut dari sisi performa, penggunaan resource, serta pengalaman pengguna. Dengan keberhasilan instalasi ini, setiap DE dapat dievaluasi untuk menentukan antarmuka yang paling ringan, responsif, dan sesuai kebutuhan target sistem operasi untuk GLAM.
 
 ---
 
 ### 4.2.3. Browser
 
-Subbab ini menyajikan hasil pengujian berbagai browser web pada sistem operasi yang dikembangkan, meliputi performa, penggunaan resource, stabilitas, dan pengalaman pengguna, sebagai dasar pemilihan browser yang paling optimal untuk lingkungan sistem operasi berbasis GLAM.
+Subbab ini menyajikan hasil pengujian berbagai browser web pada sistem operasi yang dikembangkan, meliputi performa, penggunaan resource, stabilitas, dan pengalaman pengguna, sebagai dasar pemilihan browser yang paling optimal untuk lingkungan sistem operasi untuk GLAM.
 
 #### 4.2.3.1. falcon
 
@@ -674,7 +674,7 @@ Berdasarkan hasil pengujian, Epiphany mengalami crash dan lag saat digunakan, na
 
 Secara keseluruhan, Epiphany menawarkan pengalaman pengguna yang baik dari sisi tampilan dan kemudahan, namun memiliki keterbatasan pada aspek performa dan stabilitas saat digunakan secara intensif.
 
-Tabel berikut menampilkan hasil pengujian instalasi dan ketersediaan berbagai browser web yang digunakan sebagai bagian dari evaluasi kompatibilitas aplikasi pada lingkungan sistem operasi berbasis GLAM.
+Tabel berikut menampilkan hasil pengujian instalasi dan ketersediaan berbagai browser web yang digunakan sebagai bagian dari evaluasi kompatibilitas aplikasi pada lingkungan sistem operasi untuk GLAM.
 
 | Browser  | Source                                                        | Status                       |
 | -------  | --------------------------------------------------------------| ---------------------------- |
@@ -692,8 +692,8 @@ Tabel ini menunjukkan hasil pengujian browser pada sistem operasi yang dikembang
 # 5. Kesimpulan
 
 - Berdasarkan data sampel spesifikasi yang dikumpulkan maka dapat disimpulkan spesifikasi komputer berada pada level low sampai dengan mid end
-- Rekomendasi kernel untuk sistem operasi berbasis GLAM adalah linux-zen, linux-vfio dan linux-vfio-lts
-- Rekomendasi desktop environment untuk sistem operasi berbasis GLAM adalah Gnome dan Openbox
-- Rekomendasi browser untuk sistem operasi berbasis GLAM adalah Firefox dan Epiphany
+- Rekomendasi kernel untuk sistem operasi untuk GLAM adalah linux-zen, linux-vfio dan linux-vfio-lts
+- Rekomendasi desktop environment untuk sistem operasi untuk GLAM adalah Gnome dan Openbox
+- Rekomendasi browser untuk sistem operasi untuk GLAM adalah Firefox dan Epiphany
 
 # 6. Referensi
