@@ -292,6 +292,197 @@ Adapun aplikasi yang kami gunakan untuk membantu melakukan riset sebagai berikut
 
 > bukti saat pemakaian
 
+---
+
+### Browser
+
+#### Lingkungan Pengujian
+
+Spesifikasi Perangkat  
+CPU : amd E2-1800  
+GPU : AMD Palm  
+RAM : 2GB  
+Storage : HDD, 300G)  
+
+#### hasil pengujian
+
+#### **falcon**
+
+##### 1. Performa
+
+###### 1.1 Penggunaan Resource (Idle)
+> Kondisi: browser terbuka tanpa tab aktif
+
+| Resource | Nilai |
+|--------|------|
+| CPU Usage | 4,5 % |
+| RAM Usage | 516 M |
+
+<img width="1896" height="999" alt="Image" src="https://github.com/user-attachments/assets/326c12f0-6678-4536-a3fa-f2bc5075407e" />
+
+> tampilan htop pemakaian resource saat idle
+
+###### 1.2 Performa Saat Digunakan
+> Kondisi: beberapa tab terbuka (slims, canva, youtube)
+
+| Resource | Nilai |
+|--------|------|
+| CPU Usage | 81 % |
+| RAM Usage | 820 M 
+
+<img width="1890" height="1006" alt="Image" src="https://github.com/user-attachments/assets/3a304c06-775a-4ad2-ad13-3eab3ab5e2f6" />
+
+> tampilan htop pemakaian resource saat sedang digunakan
+
+##### 2. Stabilitas
+| browser | crash | lag | memory leak |
+|---------|------|-------|------------|
+| falcon  | yes   | yes    | no         |
+
+##### 3. User Experience (UX)
+
+> penilaian menggunakan skala likert (sangat baik, baik, buruk, sangat buruk)
+
+| antarmuka & design | kemudahan | responsivitas |
+|--------------------|-----------|---------------|
+| buruk | baik | baik |
+
+---
+
+#### **dillo**
+
+##### 1. Performa
+
+###### 1.1 Penggunaan Resource (Idle)
+> Kondisi: browser terbuka tanpa tab aktif
+
+| Resource | Nilai |
+|--------|------|
+| CPU Usage | 2.6-5% |
+| RAM Usage | 239M |
+
+<img width="1895" height="989" alt="Image" src="https://github.com/user-attachments/assets/a81ac30c-e370-444e-882d-877e155c32c3" />
+
+> tampilan htop pemakaian resource saat idle
+
+###### 1.2 Performa Saat Digunakan
+> Kondisi: beberapa tab terbuka (slims, canva, youtube)
+
+| Resource | Nilai |
+|--------|------|
+| CPU Usage | 18 % |
+| RAM Usage | 381 M |
+
+<img width="1887" height="953" alt="Image" src="https://github.com/user-attachments/assets/97bb2cb0-efb6-40f7-bb8a-c8dfffb68434" />
+
+> tampilan htop pemakaian resource saat sedang digunakan
+
+##### 2. Stabilitas
+
+| browser | crash | lag | memory leak |
+|---------|------|-------|------------|
+| dilo    | yes  | yes   | no         |
+
+##### 3. User Experience (UX)
+
+> penilaian menggunakan skala likert (sangat baik, baik, buruk, sangat buruk)
+
+| antarmuka & design | kemudahan | responsivitas |
+|--------------------|-----------|---------------|
+| buruk | sangat buruk | baik |
+
+---
+
+#### firefox
+
+##### 1. Performa
+
+###### 1.1 Penggunaan Resource (Idle)
+> Kondisi: browser terbuka tanpa tab aktif
+
+| Resource | Nilai |
+|--------|------|
+| CPU Usage | 5-22% |
+| RAM Usage | 757M |
+
+<img width="1893" height="1000" alt="Image" src="https://github.com/user-attachments/assets/eb560339-4eaa-4b89-a76e-e7058aefeadc" />
+
+> tampilan htop pemakaian resource saat idle
+
+###### 1.2 Performa Saat Digunakan
+> Kondisi: beberapa tab terbuka (slims, canva, youtube)
+
+| Resource | Nilai |
+|--------|------|
+| CPU Usage | 95 % |
+| RAM Usage | 1030 M |
+
+<img width="1885" height="993" alt="Image" src="https://github.com/user-attachments/assets/9751430b-8dba-4e10-b472-d4e7ff147cd0" />
+
+> tampilan htop pemakaian resource saat sedang digunakan
+
+##### 2. Stabilitas
+
+| browser | crash | lag | memory leak |
+|---------|------|-------|------------|
+| firefox | no   | yes   | no         |
+
+
+##### 3. User Experience (UX)
+
+> penilaian menggunakan skala likert (sangat baik, baik, buruk, sangat buruk)
+
+| antarmuka & design | kemudahan | responsivitas |
+|--------------------|-----------|---------------|
+| sangat baik | baik | sangat baik |
+
+---
+
+#### Epiphany
+
+##### 1. Performa
+
+###### 1.1 Penggunaan Resource (Idle)
+> Kondisi: browser terbuka tanpa tab aktif
+
+| Resource | Nilai |
+|--------|------|
+| CPU Usage | 6% |
+| RAM Usage | 532M |
+
+<img width="1886" height="979" alt="Image" src="https://github.com/user-attachments/assets/3054ff10-7a60-48d0-9f1d-a80228166bf4" />
+
+> tampilan htop pemakaian resource saat idle
+
+###### 1.2 Performa Saat Digunakan
+> Kondisi: beberapa tab terbuka (slims, canva, youtube)
+
+| Resource | Nilai |
+|--------|------|
+| CPU Usage | 98 % |
+| RAM Usage | 881 M |
+
+<img width="1886" height="979" alt="Image" src="https://github.com/user-attachments/assets/4e21427c-3394-4429-a78d-8bb10d6c20c8" />
+
+> tampilan htop pemakaian resource saat sedang digunakan
+
+##### 2. Stabilitas
+
+| browser | crash | lag | memory leak |
+|---------|------|-------|------------|
+| firefox | yes   | yes   | no         |
+
+
+##### 3. User Experience (UX)
+
+> penilaian menggunakan skala likert (sangat baik, baik, buruk, sangat buruk)
+
+| antarmuka & design | kemudahan | responsivitas |
+|--------------------|-----------|---------------|
+| sangat baik | sangat baik | baik |
+
+
+
 ## Conclusion
 
 Berdasarkan hasil riset, dapat disimpulkan bahwa kernel dan desktop environment yang kami pilih berdasarkan hasil sistem ranking 
